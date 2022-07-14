@@ -1,0 +1,65 @@
+body 
+  padding: 0
+  margin: 0
+
+header 
+  background-color: black
+  color: white
+  
+#mobile-nav
+    padding: 1em 0
+    #front
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        h1 
+            margin-right: auto 
+            padding-left: 1em
+        #toggle 
+            color: white
+        .fa-bars 
+            margin-left: auto 
+            padding-right: 1em 
+            font-size: 2.5em
+    #mobile-links
+        display: none
+        list-style-type: none
+        font-size: 1.3em
+        text-align: center
+        margin: 0
+        padding: 0 0 0.5em
+        li
+        margin-bottom: 1em 
+        a 
+            color: white
+            text-decoration: none 
+
+#desktop-header 
+    display: none
+
+/* Desktops */
+@media only screen and (min-width: 1025px)
+
+    #mobile-nav 
+        display: none
+
+    #desktop-header 
+        display: flex
+        justify-content: space-around
+        align-items: center
+        #title 
+            color: white
+            text-decoration: none
+        #title:hover 
+            opacity: 0.5
+        nav 
+            display: flex
+            flex-direction: row
+            align-items: center
+        .links 
+            color: white
+            text-decoration: none
+            font-size: 1.2em
+            margin-left: 0.8em
+        .links:active 
+            opacity: 0.5

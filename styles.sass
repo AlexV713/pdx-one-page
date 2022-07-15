@@ -1,7 +1,10 @@
-body 
+body,
+html 
   padding: 0
   margin: 0
   overflow-x: hidden
+  background-color: white
+  scroll-behavior: smooth
 
 header 
   background-color: #1c1c1c
@@ -13,9 +16,11 @@ header
         display: flex
         justify-content: flex-end
         align-items: center
-        h1 
+        #logo,
+        img
             margin-right: auto 
             padding-left: 1em
+            height: 100px
         #toggle 
             color: white
         .fa-bars 
@@ -48,15 +53,29 @@ header
         width: auto
     #hero-text
         position: absolute
-        top: 10%
+        top: 5%
         left: auto
         color: white
         padding: 0 1em 0
         font-size: 16px
         #background 
-            background: #0000007e
-            padding: 0.2em
+            background: #000000b2
+            padding: 0.2em 0.2em 1.5em
             border-radius: 25px
+            #contact-button 
+                background-color: #47a1f4
+                padding: 0.7em
+                border-radius: 35px
+                font-size: 18px
+                color: white
+                text-decoration: none
+
+#about-section 
+    font-size: 22px
+    text-align: center
+    padding: 0 1em 0
+    p 
+        line-height: 1.5
 
 footer 
     display: flex
@@ -98,8 +117,9 @@ footer
         align-items: center
         font-size: 22px
         #title 
-            color: white
             text-decoration: none
+            img 
+                height: 150px
         #title:hover 
             opacity: 0.5
         nav 
@@ -126,10 +146,20 @@ footer
             top: 25%
             left: auto
             color: white
-            padding: 0 25em 0
+            padding: 0 15em 0
             font-size: 22px
             #background 
-                padding: 1em
+                padding: 1em 1em 2em
+                #contact-button 
+                    background-color: #47a1f4
+                    padding: 0.7em
+                    border-radius: 35px
+                    font-size: 22px
+                    color: white
+                    text-decoration: none
+
+    #about-section 
+        padding: 0 10em 0
 
     footer 
         display: grid

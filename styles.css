@@ -1,7 +1,10 @@
-body {
+body,
+html {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  background-color: white;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -25,9 +28,11 @@ header {
           align-items: center;
 }
 
-#mobile-nav #front h1 {
+#mobile-nav #front #logo,
+#mobile-nav #front img {
   margin-right: auto;
   padding-left: 1em;
+  height: 100px;
 }
 
 #mobile-nav #front #toggle {
@@ -73,7 +78,7 @@ header {
 
 #hero-banner #hero-text {
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: auto;
   color: white;
   padding: 0 1em 0;
@@ -81,9 +86,28 @@ header {
 }
 
 #hero-banner #hero-text #background {
-  background: #0000007e;
-  padding: 0.2em;
+  background: #000000b2;
+  padding: 0.2em 0.2em 1.5em;
   border-radius: 25px;
+}
+
+#hero-banner #hero-text #background #contact-button {
+  background-color: #47a1f4;
+  padding: 0.7em;
+  border-radius: 35px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+#about-section {
+  font-size: 22px;
+  text-align: center;
+  padding: 0 1em 0;
+}
+
+#about-section p {
+  line-height: 1.5;
 }
 
 footer {
@@ -151,8 +175,10 @@ footer #desktop-phone {
     font-size: 22px;
   }
   #desktop-header #title {
-    color: white;
     text-decoration: none;
+  }
+  #desktop-header #title img {
+    height: 150px;
   }
   #desktop-header #title:hover {
     opacity: 0.5;
@@ -193,11 +219,22 @@ footer #desktop-phone {
     top: 25%;
     left: auto;
     color: white;
-    padding: 0 25em 0;
+    padding: 0 15em 0;
     font-size: 22px;
   }
   #hero-banner #hero-text #background {
-    padding: 1em;
+    padding: 1em 1em 2em;
+  }
+  #hero-banner #hero-text #background #contact-button {
+    background-color: #47a1f4;
+    padding: 0.7em;
+    border-radius: 35px;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+  }
+  #about-section {
+    padding: 0 10em 0;
   }
   footer {
     display: -ms-grid;

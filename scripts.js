@@ -1,3 +1,4 @@
+//jQuery
 $(document).ready(function(){
 
     $("#toggle").on("click", function() {
@@ -6,4 +7,3 @@ $(document).ready(function(){
     });
 
 });
-

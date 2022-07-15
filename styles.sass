@@ -3,7 +3,7 @@ body
   margin: 0
 
 header 
-  background-color: black
+  background-color: #1c1c1c
   color: white
   
 #mobile-nav
@@ -37,6 +37,32 @@ header
 #desktop-header 
     display: none
 
+footer 
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    padding-left: 1em
+    padding-right: 1em
+    background-color: #1c1c1c
+    padding-bottom: 2em
+    color: white
+    ul 
+        list-style-type: none
+        padding: 0
+        margin: 0
+        font-size: 22px
+        line-height: 2
+    p,
+    a
+        font-size: 22px
+        color: white
+    a 
+        text-decoration: none
+    #mobile-phone
+        text-decoration: underline
+
 /* Desktops */
 @media only screen and (min-width: 1025px)
 
@@ -63,3 +89,16 @@ header
             margin-left: 0.8em
         .links:active 
             opacity: 0.5
+
+    footer 
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-auto-columns: 1fr
+        grid-template-rows: auto
+        grid-gap: 1em 0.5em
+        justify-content: stretch
+        justify-items: center
+        align-items: baseline
+        align-content: center
+        p 
+            padding: 0 3em 0

@@ -52,10 +52,9 @@ header {
   text-align: center;
   margin: 0;
   padding: 0 0 0.5em;
-  margin-bottom: 1em;
 }
 
-#mobile-nav #mobile-links a {
+#mobile-nav #mobile-links li a {
   color: white;
   text-decoration: none;
   font-size: 25px;
@@ -72,8 +71,8 @@ header {
 }
 
 #hero-banner img {
-  height: 300px;
-  width: auto;
+  height: 330px;
+  width: 100%;
 }
 
 #hero-banner #hero-text {
@@ -139,10 +138,10 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 300px;
+  height: 320px;
   width: auto;
   position: relative;
-  background-color: black;
+  background-color: #1c1c1c;
 }
 
 #slideshow-container .slides {
@@ -164,7 +163,7 @@ header {
   margin-right: auto;
   -o-object-fit: contain;
      object-fit: contain;
-  height: 300px;
+  height: 320px;
   width: auto;
 }
 
@@ -219,7 +218,7 @@ header {
 }
 
 #slideshow-container #dots-container .dot {
-  background-color: #717171;
+  background-color: #9b9b9b;
   width: 15px;
   height: 15px;
   cursor: pointer;
@@ -261,6 +260,13 @@ header {
 }
 
 footer {
+  padding: 1em 1em 1em;
+  color: white;
+  background-color: #1c1c1c;
+  text-align: center;
+}
+
+footer #footer-grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,15 +280,9 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-  background-color: #1c1c1c;
-  padding-bottom: 2em;
-  color: white;
 }
 
-footer ul {
+footer #footer-grid ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -290,22 +290,27 @@ footer ul {
   line-height: 2;
 }
 
-footer p,
-footer a {
+footer #footer-grid p,
+footer #footer-grid a {
   font-size: 22px;
   color: white;
 }
 
-footer a {
+footer #footer-grid a {
   text-decoration: none;
 }
 
-footer #mobile-phone {
+footer #footer-grid #mobile-phone {
   text-decoration: underline;
 }
 
-footer #desktop-phone {
+footer #footer-grid #desktop-phone {
   display: none;
+}
+
+footer .footer-copyright {
+  font-size: 15px;
+  font-style: italic;
 }
 
 /* Desktops */
@@ -358,8 +363,8 @@ footer #desktop-phone {
     position: relative;
   }
   #hero-banner img {
-    inline-size: 100%;
-    height: 750px;
+    width: 100%;
+    height: 800px;
     -o-object-fit: cover;
        object-fit: cover;
     background-repeat: no-repeat;
@@ -376,7 +381,7 @@ footer #desktop-phone {
     padding: 1em 1em 2em;
   }
   #hero-banner #hero-text #background #contact-button {
-    background-color: #47a1f4;
+    background-color: #466ab6;
     padding: 0.7em;
     border-radius: 35px;
     font-size: 22px;
@@ -403,7 +408,7 @@ footer #desktop-phone {
   #slideshow-container .next {
     bottom: 45%;
   }
-  footer {
+  footer #footer-grid {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
@@ -422,13 +427,13 @@ footer #desktop-phone {
     -ms-flex-line-pack: center;
         align-content: center;
   }
-  footer p {
+  footer #footer-grid p {
     padding: 0 3em 0;
   }
-  footer #mobile-phone {
+  footer #footer-grid #mobile-phone {
     display: none;
   }
-  footer #desktop-phone {
+  footer #footer-grid #desktop-phone {
     display: block;
   }
 }

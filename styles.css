@@ -92,7 +92,7 @@ header {
 }
 
 #hero-banner #hero-text #background #contact-button {
-  background-color: #47a1f4;
+  background-color: #466ab6;
   padding: 0.7em;
   border-radius: 35px;
   font-size: 18px;
@@ -108,6 +108,156 @@ header {
 
 #about-section p {
   line-height: 1.5;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#slideshow-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  width: auto;
+  position: relative;
+  background-color: black;
+}
+
+#slideshow-container .slides {
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#slideshow-container .slides .images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 300px;
+  width: auto;
+}
+
+#slideshow-container .slides .caption-text {
+  display: none;
+  text-align: center;
+  color: white;
+}
+
+#slideshow-container .prev,
+#slideshow-container .next {
+  background: #466ab6;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  font-size: 1.5em;
+  cursor: pointer;
+  bottom: 40%;
+}
+
+#slideshow-container .prev:active,
+#slideshow-container .next:active {
+  opacity: 0.5;
+}
+
+#slideshow-container .prev {
+  left: 5%;
+}
+
+#slideshow-container .next {
+  right: 5%;
+}
+
+#slideshow-container #dots-container {
+  position: absolute;
+  bottom: 5%;
+  left: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+  padding-bottom: 1em;
+}
+
+#slideshow-container #dots-container .dot {
+  background-color: #717171;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+  border-radius: 50%;
+}
+
+#slideshow-container #dots-container .dot:active {
+  opacity: 0.5;
+}
+
+#slideshow-container #dots-container .active,
+#slideshow-container #dots-container .dot:hover {
+  background-color: white;
+}
+
+.slide-effect {
+  -webkit-animation: slides-animation 2s;
+          animation: slides-animation 2s;
+}
+
+@-webkit-keyframes slides-animation {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slides-animation {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 footer {
@@ -235,6 +385,23 @@ footer #desktop-phone {
   }
   #about-section {
     padding: 0 10em 0;
+  }
+  #slideshow-container {
+    height: 750px;
+  }
+  #slideshow-container .slides .images {
+    height: 750px;
+    width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #slideshow-container #dots-container {
+    bottom: 1%;
+    left: 47%;
+  }
+  #slideshow-container .prev,
+  #slideshow-container .next {
+    bottom: 45%;
   }
   footer {
     display: -ms-grid;

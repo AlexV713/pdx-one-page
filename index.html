@@ -9,7 +9,6 @@
     <link rel="canonical" href="">
     <script src="https://kit.fontawesome.com/cf72e27b3d.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="scripts.js"></script>
     <title>PDX Handyman Services LLC</title>
 </head>
 
@@ -57,8 +56,10 @@
             <div id="hero-text">
                 <div id="background">
                     <h2>Jobs Unlimited: Odd. Even. Any</h2>
-                    <h3>With over 30 years of experience, his services have helped many clients renovate their homes and patios across Oregon.</h3>
-                    <h4>PDX Handyman Services LLC prides itself in offering clients the best handyman experience and luxurious homes and patios.</h4>
+                    <h3>With over 30 years of experience, his services have helped many clients renovate their homes and
+                        patios across Oregon.</h3>
+                    <h4>PDX Handyman Services LLC prides itself in offering clients the best handyman experience and
+                        luxurious homes and patios.</h4>
                     <a id="contact-button" href="#contact-section">Contact Today</a>
                 </div>
             </div>
@@ -66,9 +67,49 @@
 
         <div id="about-section">
             <h2>About Me</h2>
-            <p>Hello, I am Jose Valerio (owner) and I’ve been working as a Handyman for over 30 years. I started working as a handyman back in my home country, Mexico, and started my business after moving to the U.S.</p>
+            <p>Hello, I am Jose Valerio (owner) and I’ve been working as a Handyman for over 30 years. I started working
+                as a handyman back in my home country, Mexico, and started my business after moving to the U.S.</p>
             <h2>Work Locations</h2>
-            <p>I am available in your area! <br><br>All Forest Grove, Cornelius, Hillsboro, Beaverton, Aloha, Tigard, Newberg, Tillamook, Oregon City, Portland, McMinnville, Lake Oswego, and Vancouver Washington!</p>
+            <p>I am available in your area! <br><br>All Forest Grove, Cornelius, Hillsboro, Beaverton, Aloha, Tigard,
+                Newberg, Tillamook, Oregon City, Portland, McMinnville, Lake Oswego, and Vancouver Washington!</p>
+        </div>
+
+        <div id="projects-section">
+
+            <div id="slideshow-container">
+
+                <div class="slides slide-effect">
+                    <img class="images" src="https://cdn.pixabay.com/photo/2016/07/11/21/23/water-lily-1510707_960_720.jpg" alt="flowers">
+                    <p class="caption-text">Image 1</p>
+                </div>
+
+                <div class="slides slide-effect">
+                    <img class="images" src="https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_960_720.jpg" alt="flowers">
+                    <p class="caption-text">Image 2</p>
+                </div>
+
+                <div class="slides slide-effect">
+                    <img class="images" src="https://cdn.pixabay.com/photo/2015/10/09/00/55/lotus-978659_960_720.jpg" alt="flowers">
+                    <p class="caption-text">Image 3</p>
+                </div>
+
+                <div class="slides slide-effect">
+                    <img class="images" src="https://cdn.pixabay.com/photo/2017/06/18/21/37/rose-2417334_960_720.jpg" alt="flowers">
+                    <p class="caption-text">Image 4</p>
+                </div>
+
+                <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="next" onclick="plusSlides(1)">&#10095;</button>
+
+                <div id="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+
+            </div>
+
         </div>
 
     </main>
@@ -79,7 +120,7 @@
             <h2>PDX Handyman Services LLC</h2>
             <p>Home owners across Oregon have been calling for my services for over 30 years!</p>
         </div>
-        
+
         <div>
             <h2>Quick Links</h2>
             <ul>
@@ -98,6 +139,8 @@
         </div>
 
     </footer>
+    
+    <script src="scripts.js" type="text/javascript"></script>
 </body>
 
 </html>

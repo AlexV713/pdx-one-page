@@ -288,12 +288,13 @@ h2 {
   width: 100%;
   height: auto;
   border: solid #1c1c1c 2px;
+  border-radius: 15px;
 }
 
 #services-section #services-grid .boxes h3 {
   position: absolute;
-  bottom: 4em;
-  left: 6em;
+  top: 30%;
+  left: 35%;
   background: #000000b2;
   color: white;
   padding: 0.5em;

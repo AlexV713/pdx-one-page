@@ -332,6 +332,15 @@ h2 {
   text-align: center;
 }
 
+#contact-section #contact-grid #contact-info #contact-phone-mobile {
+  background-color: #466ab6;
+  color: white;
+  padding: 0.5em;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
 #contact-section #contact-grid #contact-info #contact-phone-desktop {
   display: none;
 }
@@ -347,6 +356,7 @@ footer {
   color: white;
   background-color: #1c1c1c;
   text-align: center;
+  font-size: 22px;
 }
 
 footer #footer-grid {
@@ -369,13 +379,12 @@ footer #footer-grid ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  font-size: 22px;
   line-height: 2;
 }
 
 footer #footer-grid p,
 footer #footer-grid a {
-  font-size: 22px;
+  font-size: 25px;
   color: white;
 }
 
@@ -392,8 +401,32 @@ footer #footer-grid #desktop-phone {
 }
 
 footer .footer-copyright {
+  padding-top: 2em;
   font-size: 15px;
   font-style: italic;
+}
+
+#backUp {
+  display: none;
+  position: fixed;
+  bottom: 4em;
+  right: 2.5em;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #466ab6;
+  color: black;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.5em;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+#backUp:active {
+  opacity: 0.5;
 }
 
 /* Desktops */
@@ -564,6 +597,9 @@ footer .footer-copyright {
   }
   footer #footer-grid #desktop-phone {
     display: block;
+  }
+  #backUp {
+    bottom: 2em;
   }
 }
 

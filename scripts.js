@@ -6,6 +6,19 @@ $(document).ready(function(){
         $(".fa-bars").toggleClass("fa-times");
     });
 
+      // Top of Page Function
+    $(window).scroll(function(){
+      if ($(document).scrollTop() > 300) {
+          $("#backUp").css("display", "block");
+      } else if ($(document).scrollTop() < 300) {
+          $("#backUp").css("display", "none"); 
+      }
+    });
+
+    $("#backUp").on("click", function() {
+      $('html, body').animate({scrollTop: '0px'}, 300);
+    });
+
 });
 
 //Image Gallery

@@ -5,10 +5,14 @@ html
   overflow-x: hidden
   background-color: white
   scroll-behavior: smooth
+  background: url("images/background2.jpg") no-repeat
 
 header 
   background-color: #1c1c1c
   color: white
+
+h2 
+    text-align: center
   
 #mobile-nav
     padding: 1em 0
@@ -69,13 +73,6 @@ header
                 color: white
                 text-decoration: none
 
-#about-section 
-    font-size: 22px
-    text-align: center
-    padding: 0 1em 0
-    p 
-        line-height: 1.5
-
 .fade
     animation-name: fade
     animation-duration: 2s
@@ -87,71 +84,72 @@ header
   to
     opacity: 1
 
-#slideshow-container 
-    display: block
-    margin-left: auto
-    margin-right: auto
-    height: 320px
-    width: auto
-    position: relative
-    background-color: #1c1c1c
-    .slides 
-        display: none
-        flex-wrap: wrap
-        justify-content: center
-        align-items: center
+#about-section
+    font-size: 22px
+
+#projects-section
+    font-size: 22px
+    #slideshow-container 
+        display: block
+        margin-left: auto
+        margin-right: auto
+        height: 320px
+        width: auto
         position: relative
-        .images 
-            display: block
-            margin-left: auto
-            margin-right: auto
-            object-fit: contain
-            height: 320px
-            width: auto
-        .caption-text 
+        background-color: #1c1c1c
+        .slides 
             display: none
-            text-align: center
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+            position: relative
+            .images 
+                display: block
+                margin-left: auto
+                margin-right: auto
+                object-fit: contain
+                height: 320px
+                width: auto
+        .prev,
+        .next 
+            background: #466ab6
             color: white
-    .prev,
-    .next 
-        background: #466ab6
-        color: white
-        border: none
-        border-radius: 50%
-        height: 50px
-        width: 50px
-        position: absolute
-        font-size: 1.5em
-        cursor: pointer
-        bottom: 40%
-    .prev:active,
-    .next:active 
-        opacity: 0.5
-    .prev 
-        left: 5%
-    .next 
-        right: 5%
-    #dots-container 
-        position: absolute
-        bottom: 5%
-        left: 40%
-        display: flex
-        justify-content: center
-        align-items: center
-        gap: 1em
-        padding-bottom: 1em
-        .dot 
-            background-color: #9b9b9b
-            width: 15px
-            height: 15px
-            cursor: pointer
-            transition: background-color 0.6s ease
+            border: none
             border-radius: 50%
-        .dot:active 
+            height: 50px
+            width: 50px
+            position: absolute
+            font-size: 1.5em
+            cursor: pointer
+            top: 45%
+        .prev:active,
+        .next:active 
             opacity: 0.5
-        .active, 
-        .dot:hover 
-            background-color: white
+        .prev 
+            left: 5%
+        .next 
+            right: 5%
+        #dots-container 
+            position: absolute
+            top: 90%
+            left: auto
+            font-size: 16px
+            text-align: center
+            width: 100%
+            word-spacing: 5px
+            .dot 
+                display: inline-block
+                background-color: #9b9b9b
+                width: 15px
+                height: 15px
+                cursor: pointer
+                transition: background-color 0.6s ease
+                border-radius: 50%
+            .dot:active 
+                opacity: 0.5
+            .active, 
+            .dot:hover 
+                background-color: white
 
       
 .slide-effect 
@@ -164,8 +162,10 @@ header
     opacity: 1
 
 #services-section 
-    h2 
-        text-align: center
+    background-color: #1c1c1c 
+    color: white
+    font-size: 22px
+    padding: 0.1em 1em 1em
     #services-grid
         display: flex
         flex-direction: column
@@ -190,11 +190,11 @@ header
                 color: white
                 padding: 0.5em
                 border-radius: 15px
+                font-size: 19px
 
 #contact-section
     font-size: 22px
     padding: 0 1em 1em
-    text-align: center
     #contact-grid
         display: flex
         flex-direction: column
@@ -204,9 +204,15 @@ header
             width: 100%
             height: auto
         #contact-info 
+            text-align: center
             #contact-phone-desktop
                 display: none
-        
+
+.text 
+    text-align: center
+    line-height: 1.5
+    padding: 0 1em 0
+
 footer
     padding: 1em 1em 1em
     color: white
@@ -278,7 +284,7 @@ footer
             top: 25%
             left: auto
             color: white
-            padding: 0 15em 0
+            padding: 0 10em 0
             font-size: 22px
             #background 
                 padding: 1em 1em 2em
@@ -293,19 +299,19 @@ footer
     #about-section 
         padding: 0 10em 0
 
-    #slideshow-container
-        height: 750px
-        .slides
-            .images
-                height: 750px
-                width: auto
-                object-fit: cover
-        #dots-container
-            bottom: 1%
-            left: 47%
-        .prev,
-        .next 
-            bottom: 45%
+    #projects-section
+        #slideshow-container
+            height: 750px
+            .slides
+                .images
+                    height: 750px
+                    width: auto
+                    object-fit: cover
+            #dots-container
+                font-size: 16px
+                top: 95%
+        .text 
+            padding: 0 10em 0
 
     #services-section
         #services-grid
@@ -318,6 +324,8 @@ footer
             justify-items: center
             align-items: baseline
             align-content: center
+        .text 
+            padding: 0 10em 0
 
     #contact-section
         #contact-grid
@@ -325,7 +333,7 @@ footer
             flex-direction: row
             flex-wrap: wrap
             justify-content: center
-            gap: 5em
+            gap: 4em
             img 
                 width: 600px
                 height: auto
@@ -352,3 +360,21 @@ footer
                 display: none
             #desktop-phone 
                 display: block
+
+/* Desktops 1440p */
+@media only screen and (min-width: 1400px)
+    #hero-banner
+        #hero-text
+            padding: 0 25em 0
+
+    #about-section 
+        .text
+            padding: 0 15em 0
+
+    #projects-section
+        .text
+            padding: 0 15em 0
+
+    #services-section
+        .text 
+            padding: 0 15em 0

@@ -112,7 +112,7 @@ h2
                 width: auto
         .prev,
         .next 
-            background: #466ab6
+            background-color: transparent
             color: white
             border: none
             border-radius: 50%
@@ -272,6 +272,107 @@ footer
   
 #backUp:active 
     opacity: 0.5 
+
+/* Tablets */
+@media only screen and (min-width: 480px) 
+    #mobile-nav 
+        display: none
+
+    #desktop-header
+        display: flex    
+        #desktop-header 
+        display: flex
+        justify-content: space-around
+        align-items: center
+        font-size: 22px
+        #title 
+            text-decoration: none
+            img 
+                height: 150px
+        #title:hover 
+            opacity: 0.5
+        nav 
+            display: flex
+            flex-direction: row
+            align-items: center
+        .links 
+            color: white
+            text-decoration: none
+            font-size: 1.2em
+            margin-left: 0.8em
+        .links:active 
+            opacity: 0.5
+
+    #hero-banner
+        img 
+            height: 500px
+            object-fit: cover
+            background-repeat: no-repeat
+        #hero-text
+            top: 15%
+            font-size: 22px
+            #background
+                #contact-button
+                    font-size: 22px
+
+    #about-section 
+        font-size: 22px
+        .text
+            padding: 0 5em 0
+
+    #projects-section
+        font-size: 22px
+        #slideshow-container
+            height: 600px
+            .slides
+                .images
+                    height: 600px
+                    width: auto
+                    object-fit: cover
+            #dots-container
+                font-size: 16px
+                top: 95%
+    .text 
+        padding: 0 5em 0
+
+
+    #services-section
+        font-size: 22px
+        #services-grid
+            display: grid
+            grid-template-columns: auto auto
+            grid-auto-columns: 1fr
+            grid-template-rows: auto
+            grid-gap: 2em 2em
+            justify-content: center
+            justify-items: center
+            align-items: baseline
+            align-content: center
+
+    #contact-section
+        font-size: 22px
+        padding: 0 1em 1em
+        #contact-grid
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            img 
+                width: 100%
+                height: auto
+            #contact-info 
+                text-align: center
+                #contact-phone-mobile
+                    display: none
+                #contact-phone-desktop
+                    display: block
+
+    footer 
+        #footer-grid
+            #mobile-phone
+                display: none
+            #desktop-phone
+                display: block
 
 /* Desktops */
 @media only screen and (min-width: 1025px)

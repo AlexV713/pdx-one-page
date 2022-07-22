@@ -1,0 +1,513 @@
+body,
+html 
+  padding: 0
+  margin: 0
+  overflow-x: hidden
+  background-color: white
+  scroll-behavior: smooth
+
+header 
+  background-color: #1c1c1c
+  color: white
+
+h2 
+    text-align: center
+  
+#mobile-nav
+    padding: 1em 0
+    #front
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        #logo,
+        img
+            margin-right: auto 
+            padding-left: 1em
+            height: 100px
+        #toggle 
+            color: white
+        .fa-bars 
+            margin-left: auto 
+            padding-right: 1em 
+            font-size: 2.5em
+    #mobile-links
+        display: none
+        list-style-type: none
+        font-size: 1.3em
+        text-align: center
+        margin: 0
+        padding: 0 0 0.5em
+        li
+            a 
+                color: white
+                text-decoration: none 
+                font-size: 25px
+                line-height: 2
+
+#desktop-header 
+    display: none
+
+#hero-banner 
+    text-align: center
+    position: relative
+    img
+        height: 330px
+        width: 100%
+    #hero-text
+        position: absolute
+        top: 5%
+        left: auto
+        color: white
+        padding: 0 1em 0
+        font-size: 16px
+        #background 
+            background: #000000b2
+            padding: 0.2em 0.2em 1.5em
+            border-radius: 25px
+            #contact-button 
+                background-color: #466ab6
+                padding: 0.7em
+                border-radius: 35px
+                font-size: 18px
+                color: white
+                text-decoration: none
+
+.fade
+    animation-name: fade
+    animation-duration: 2s
+
+@keyframes fade
+  from
+    opacity: 0.5
+
+  to
+    opacity: 1
+
+#about-section
+    font-size: 22px
+
+#projects-section
+    font-size: 22px
+    #slideshow-container 
+        display: block
+        margin-left: auto
+        margin-right: auto
+        height: 320px
+        width: auto
+        position: relative
+        background-color: #1c1c1c
+        .slides 
+            display: none
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+            position: relative
+            .images 
+                display: block
+                margin-left: auto
+                margin-right: auto
+                object-fit: contain
+                height: 320px
+                width: auto
+        .prev,
+        .next 
+            background-color: transparent
+            color: white
+            border: none
+            border-radius: 50%
+            height: 50px
+            width: 50px
+            position: absolute
+            font-size: 1.5em
+            cursor: pointer
+            top: 45%
+        .prev:active,
+        .next:active 
+            opacity: 0.5
+        .prev 
+            left: 5%
+        .next 
+            right: 5%
+        #dots-container 
+            position: absolute
+            top: 90%
+            left: auto
+            font-size: 16px
+            text-align: center
+            width: 100%
+            word-spacing: 5px
+            .dot 
+                display: inline-block
+                background-color: #9b9b9b
+                width: 15px
+                height: 15px
+                cursor: pointer
+                transition: background-color 0.6s ease
+                border-radius: 50%
+            .dot:active 
+                opacity: 0.5
+            .active, 
+            .dot:hover 
+                background-color: white
+
+      
+.slide-effect 
+  animation: slides-animation 2s
+      
+@keyframes slides-animation
+  from 
+    opacity: 0.5
+  to
+    opacity: 1
+
+#services-section 
+    background-color: #1c1c1c 
+    color: white
+    font-size: 22px
+    padding: 0.1em 1em 1em
+    #services-grid
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        gap: 1em
+        .boxes 
+            width: 320px
+            height: auto
+            position: relative
+            img 
+                object-fit: contain
+                width: 100%
+                height: auto
+                border: solid #1c1c1c 2px
+                border-radius: 15px
+            h3 
+                position: absolute
+                top: 30%
+                left: 35%
+                background: #000000b2
+                color: white
+                padding: 0.5em
+                border-radius: 15px
+                font-size: 19px
+
+#contact-section
+    font-size: 22px
+    padding: 0 1em 1em
+    #contact-grid
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        img 
+            width: 100%
+            height: auto
+        #contact-info 
+            text-align: center
+            #contact-phone-mobile
+                background-color: #466ab6
+                color: white
+                padding: 0.5em
+                border-radius: 25px
+                text-decoration: none
+                font-size: 25px
+            #contact-phone-desktop
+                display: none
+
+.text 
+    text-align: center
+    line-height: 1.5
+    padding: 0 1em 0
+
+footer
+    padding: 1em 1em 1em
+    color: white
+    background-color: #1c1c1c
+    text-align: center
+    font-size: 22px
+    #footer-grid 
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        ul 
+            list-style-type: none
+            padding: 0
+            margin: 0
+            line-height: 2
+        p,
+        a
+            font-size: 25px
+            color: white
+        a 
+            text-decoration: none
+        #mobile-phone
+            text-decoration: underline
+        #desktop-phone 
+            display: none
+    .footer-copyright 
+        padding-top: 2em
+        font-size: 15px
+        font-style: italic
+
+#backUp 
+    display: none 
+    position: fixed 
+    bottom: 4em
+    right: 2.5em
+    z-index: 99 
+    border: none
+    outline: none
+    background-color: #466ab6
+    color: black 
+    cursor: pointer 
+    border-radius: 50%
+    padding: 0.5em 
+    padding-left: 0.7em
+    padding-right: 0.7em 
+    font-size: 1.5em
+    color: #ffffff
+  
+#backUp:active 
+    opacity: 0.5 
+
+/* Tablets */
+@media only screen and (min-width: 480px) 
+    #mobile-nav 
+        display: none
+
+    #desktop-header
+        display: flex    
+        #desktop-header 
+        display: flex
+        justify-content: space-around
+        align-items: center
+        font-size: 22px
+        #title 
+            text-decoration: none
+            img 
+                height: 150px
+        #title:hover 
+            opacity: 0.5
+        nav 
+            display: flex
+            flex-direction: row
+            align-items: center
+        .links 
+            color: white
+            text-decoration: none
+            font-size: 1.2em
+            margin-left: 0.8em
+        .links:active 
+            opacity: 0.5
+
+    #hero-banner
+        img 
+            height: 500px
+            object-fit: cover
+            background-repeat: no-repeat
+        #hero-text
+            top: 15%
+            font-size: 22px
+            #background
+                #contact-button
+                    font-size: 22px
+
+    #about-section 
+        font-size: 22px
+        .text
+            padding: 0 5em 0
+
+    #projects-section
+        font-size: 22px
+        #slideshow-container
+            height: 600px
+            .slides
+                .images
+                    height: 600px
+                    width: auto
+                    object-fit: cover
+            #dots-container
+                font-size: 16px
+                top: 95%
+    .text 
+        padding: 0 5em 0
+
+
+    #services-section
+        font-size: 22px
+        #services-grid
+            display: grid
+            grid-template-columns: auto auto
+            grid-auto-columns: 1fr
+            grid-template-rows: auto
+            grid-gap: 2em 2em
+            justify-content: center
+            justify-items: center
+            align-items: baseline
+            align-content: center
+
+    #contact-section
+        font-size: 22px
+        padding: 0 1em 1em
+        #contact-grid
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            img 
+                width: 100%
+                height: auto
+            #contact-info 
+                text-align: center
+                #contact-phone-mobile
+                    display: none
+                #contact-phone-desktop
+                    display: block
+
+    footer 
+        #footer-grid
+            #mobile-phone
+                display: none
+            #desktop-phone
+                display: block
+
+/* Desktops */
+@media only screen and (min-width: 1025px)
+
+    #mobile-nav 
+        display: none
+
+    #desktop-header 
+        display: flex
+        justify-content: space-around
+        align-items: center
+        font-size: 22px
+        #title 
+            text-decoration: none
+            img 
+                height: 150px
+        #title:hover 
+            opacity: 0.5
+        nav 
+            display: flex
+            flex-direction: row
+            align-items: center
+        .links 
+            color: white
+            text-decoration: none
+            font-size: 1.2em
+            margin-left: 0.8em
+        .links:active 
+            opacity: 0.5
+
+    #hero-banner 
+        position: relative
+        img
+            width: 100%
+            height: 800px
+            object-fit: cover
+            background-repeat: no-repeat
+        #hero-text
+            position: absolute
+            top: 25%
+            left: auto
+            color: white
+            padding: 0 10em 0
+            font-size: 22px
+            #background 
+                padding: 1em 1em 2em
+                #contact-button 
+                    background-color: #466ab6
+                    padding: 0.7em
+                    border-radius: 35px
+                    font-size: 22px
+                    color: white
+                    text-decoration: none
+
+    #about-section 
+        padding: 0 10em 0
+
+    #projects-section
+        #slideshow-container
+            height: 750px
+            .slides
+                .images
+                    height: 750px
+                    width: auto
+                    object-fit: cover
+            #dots-container
+                font-size: 16px
+                top: 95%
+        .text 
+            padding: 0 10em 0
+
+    #services-section
+        #services-grid
+            display: grid
+            grid-template-columns: auto auto auto
+            grid-auto-columns: 1fr
+            grid-template-rows: auto
+            grid-gap: 2em 3em
+            justify-content: center
+            justify-items: center
+            align-items: baseline
+            align-content: center
+        .text 
+            padding: 0 10em 0
+
+    #contact-section
+        #contact-grid
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: center
+            gap: 4em
+            img 
+                width: 600px
+                height: auto
+            #contact-info 
+                #contact-phone-mobile
+                    display: none
+                #contact-phone-desktop
+                    display: block
+
+    footer
+        #footer-grid
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr
+            grid-auto-columns: 1fr
+            grid-template-rows: auto
+            grid-gap: 1em 0.5em
+            justify-content: stretch
+            justify-items: center
+            align-items: baseline
+            align-content: center
+            p 
+                padding: 0 3em 0
+            #mobile-phone
+                display: none
+            #desktop-phone 
+                display: block
+
+    #backUp 
+        bottom: 2em
+
+/* Desktops 1440p */
+@media only screen and (min-width: 1400px)
+    #hero-banner
+        #hero-text
+            padding: 0 25em 0
+
+    #about-section 
+        .text
+            padding: 0 15em 0
+
+    #projects-section
+        .text
+            padding: 0 15em 0
+
+    #services-section
+        .text 
+            padding: 0 15em 0

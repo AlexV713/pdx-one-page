@@ -9,7 +9,7 @@
     </div>
 
     <div class="slides slide-effect">
-        <img loading="lazy" class="images" src="images/projects/40.jpEg" alt="complete renovated home, new grass front yard, and gravel.">
+        <img loading="lazy" class="images" src="images/projects/40.jpeg" alt="complete renovated home, new grass front yard, and gravel.">
     </div>
 
     <div class="slides slide-effect">

@@ -2,7 +2,7 @@
 
 <nav id="mobile-nav">
     <div id="front">
-        <a href="index.html" id="logo">
+        <a href="https://pdxhandymanservicesllc.com/" id="logo">
             <img src="images/pdx-logo.png" alt="handyman">
         </a>
         <a href="#" id="toggle">
@@ -10,7 +10,7 @@
         </a>
     </div>
     <ul id="mobile-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="https://pdxhandymanservicesllc.com/">Home</a></li>
         <li><a href="#about-section">About</a></li>
         <li><a href="#projects-section">Projects</a></li>
         <li><a href="#services-section">Services</a></li>
@@ -19,11 +19,11 @@
 </nav>
 
 <div id="desktop-header">
-    <a href="index.html" id="title">
+    <a href="https://pdxhandymanservicesllc.com/" id="title">
         <img src="images/pdx-logo.png" alt="handyman">
     </a>
     <nav>
-        <a href="index.html" class="links">Home</a>
+        <a href="https://pdxhandymanservicesllc.com/" class="links">Home</a>
         <a href="#about-section" class="links">About</a>
         <a href="#projects-section" class="links">Projects</a>
         <a href="#services-section" class="links">Services</a>

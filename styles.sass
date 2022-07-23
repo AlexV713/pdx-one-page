@@ -130,6 +130,7 @@ h2
         .next 
             right: 5%
         #dots-container 
+            display: none
             position: absolute
             top: 90%
             left: auto
@@ -138,7 +139,7 @@ h2
             width: 100%
             word-spacing: 5px
             .dot 
-                display: inline-block
+                display: none
                 background-color: #9b9b9b
                 width: 15px
                 height: 15px
@@ -330,8 +331,11 @@ footer
                     width: auto
                     object-fit: cover
             #dots-container
+                display: block
                 font-size: 16px
                 top: 95%
+                .dot
+                    display: inline-block
     .text 
         padding: 0 5em 0
 
@@ -439,8 +443,11 @@ footer
                     width: auto
                     object-fit: cover
             #dots-container
+                display: block
                 font-size: 16px
                 top: 95%
+                .dot 
+                    display: inline-block
         .text 
             padding: 0 10em 0
 

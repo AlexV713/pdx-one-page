@@ -3,7 +3,7 @@
 <nav id="mobile-nav">
     <div id="front">
         <a href="index.html" id="logo">
-            <img src="images/pdx-logo.png" alt="handy man">
+            <img src="images/pdx-logo.png" alt="handyman">
         </a>
         <a href="#" id="toggle">
             <i class="fas fa-bars"></i>
@@ -20,7 +20,7 @@
 
 <div id="desktop-header">
     <a href="index.html" id="title">
-        <img src="images/pdx-logo.png" alt="handy man">
+        <img src="images/pdx-logo.png" alt="handyman">
     </a>
     <nav>
         <a href="index.html" class="links">Home</a>

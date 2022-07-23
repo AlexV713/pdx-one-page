@@ -7,8 +7,23 @@
     <meta charset="UTF-8">
     <meta name="description" content="PDX Handyman Services LLC is a local handyman, renovator, landscaper, and painter in Oregon.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="PDX Handyman Services LLC"/>
+    <meta property="og:image" content="images/pdx-banner.png"/>
+    <meta property="og:description" content="PDX Handyman Services LLC is a local handyman, renovator, landscaper, and painter in Oregon."/>
+    <meta property="og:url" content="https://pdxhandymanservicesllc.com/"/>
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="628" />
+    <meta property="og:type" content="website"/>
+
     <link href="styles.css" rel="stylesheet" type="text/css">
     <link rel="canonical" href="https://pdxhandymanservicesllc.com/">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+    
     <script src="https://kit.fontawesome.com/cf72e27b3d.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>PDX Handyman Services LLC</title>
@@ -63,32 +78,32 @@
             <h2>Services</h2>
             <div id="services-grid">
                 <div class="boxes">
-                    <img src="images/handyman.jpg" alt="">
+                    <img src="images/handyman.jpg" alt="handyman services services in oregon">
                     <h3>Handyman</h3>
                 </div>
 
                 <div class="boxes">
-                    <img src="images/remodeling.jpg" alt="">
+                    <img src="images/remodeling.jpg" alt="renovation services services in oregon">
                     <h3>Renovation</h3>
                 </div>
 
                 <div class="boxes">
-                    <img src="images/landscape.jpg" alt="">
+                    <img src="images/landscape.jpg" alt="landscape services services in oregon">
                     <h3>Landscape</h3>
                 </div>
 
                 <div class="boxes">
-                    <img src="images/hardscape.jpg" alt="">
+                    <img src="images/hardscape.jpg" alt="hardscape services services in oregon">
                     <h3>Hardscape</h3>
                 </div>
 
                 <div class="boxes">
-                    <img src="images/painting.jpg" alt="">
+                    <img src="images/painting.jpg" alt="interior and exterior painting services in oregon">
                     <h3>Painting</h3>
                 </div>
 
                 <div class="boxes">
-                    <img src="images/installation.jpg" alt="">
+                    <img src="images/installation.jpg" alt="installation services in oregon">
                     <h3>Installation</h3>
                 </div>
             </div>
@@ -103,7 +118,7 @@
         <div id="contact-section">
             <h2>Contact</h2>
             <div id="contact-grid">
-                <img src="images/business-card.jpg" alt="">
+                <img src="images/business-card.jpg" alt="contact pdx handyman services today">
                 <div id="contact-info">
                     <h3>Need a Handyman or Need Your Home Renovated?</h3>
                     <p>Jose Valerio<br>(Owner)</p>

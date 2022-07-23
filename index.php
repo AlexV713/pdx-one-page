@@ -5,10 +5,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Website Template">
+    <meta name="description" content="PDX Handyman Services LLC is a local handyman, renovator, landscaper, and painter in Oregon.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet" type="text/css">
-    <link rel="canonical" href="">
+    <link rel="canonical" href="https://pdxhandymanservicesllc.com/">
     <script src="https://kit.fontawesome.com/cf72e27b3d.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>PDX Handyman Services LLC</title>
@@ -107,8 +107,8 @@
                 <div id="contact-info">
                     <h3>Need a Handyman or Need Your Home Renovated?</h3>
                     <p>Jose Valerio<br>(Owner)</p>
-                    <a href="tel:5033333333" id="contact-phone-mobile">Call Now</a>
-                    <p id="contact-phone-desktop">5033333333</p>
+                    <a href="tel:5033510987" id="contact-phone-mobile">Call Now</a>
+                    <p id="contact-phone-desktop">(503) 351-0987</p>
                 </div>
             </div>
         </div>

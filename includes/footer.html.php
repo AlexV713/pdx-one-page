@@ -19,10 +19,10 @@
 
             <div>
                 <h2>Contact</h2>
-                <a href="tel:503333333" id="mobile-phone">5033333333</a>
-                <p id="desktop-phone">5033333333</p>
+                <a href="tel:5033510987" id="mobile-phone">(503) 351-0987</a>
+                <p id="desktop-phone">(503) 351-0987</p>
             </div>
 
         </div>
-        <p class="footer-copyright">Copyright @PDX Handyman Services LLC<br>Website created by Alejandro Valerio</p>
+        <p class="footer-copyright">Copyright @ <?php echo date("Y"); ?> PDX Handyman Services LLC<br>Website created by Alejandro Valerio</p>
     </footer>

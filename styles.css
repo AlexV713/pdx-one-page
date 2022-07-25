@@ -288,19 +288,22 @@ h2 {
      object-fit: contain;
   width: 100%;
   height: auto;
-  border: solid #1c1c1c 2px;
   border-radius: 15px;
 }
 
 #services-section #services-grid .boxes h3 {
   position: absolute;
   top: 30%;
-  left: 35%;
-  background: #000000b2;
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 2px 2px black;
+  font-size: 25px;
   color: white;
-  padding: 0.5em;
-  border-radius: 15px;
-  font-size: 19px;
+}
+
+#services-section #services-grid .boxes h3:hover {
+  color: #466ab6;
 }
 
 #contact-section {

@@ -133,6 +133,15 @@ h2 {
   font-size: 22px;
 }
 
+#about-section video {
+  display: block;
+  margin: 0 auto 1em;
+  height: 350px;
+  width: auto;
+  background-color: #1c1c1c;
+  width: auto;
+}
+
 #projects-section {
   font-size: 22px;
 }
@@ -228,6 +237,15 @@ h2 {
   background-color: white;
 }
 
+#projects-section video {
+  display: block;
+  margin: 0 auto 1em;
+  height: 350px;
+  width: auto;
+  background-color: #1c1c1c;
+  width: auto;
+}
+
 .slide-effect {
   -webkit-animation: slides-animation 2s;
           animation: slides-animation 2s;
@@ -280,7 +298,6 @@ h2 {
 #services-section #services-grid .boxes {
   width: 320px;
   height: auto;
-  position: relative;
 }
 
 #services-section #services-grid .boxes img {
@@ -292,18 +309,11 @@ h2 {
 }
 
 #services-section #services-grid .boxes h3 {
-  position: absolute;
-  top: 30%;
-  width: 100%;
   text-align: center;
   text-decoration: underline;
   text-shadow: 2px 2px black;
   font-size: 25px;
   color: white;
-}
-
-#services-section #services-grid .boxes h3:hover {
-  color: #466ab6;
 }
 
 #contact-section {
@@ -330,6 +340,7 @@ h2 {
 #contact-section #contact-grid img {
   width: 100%;
   height: auto;
+  border-radius: 15px;
 }
 
 #contact-section #contact-grid #contact-info {
@@ -422,9 +433,8 @@ footer .footer-copyright {
   color: black;
   cursor: pointer;
   border-radius: 50%;
-  padding: 0.5em;
-  padding-left: 0.7em;
-  padding-right: 0.7em;
+  height: 75px;
+  width: 75px;
   font-size: 1.5em;
   color: #ffffff;
 }
@@ -499,6 +509,12 @@ footer .footer-copyright {
   #about-section .text {
     padding: 0 5em 0;
   }
+  #about-section video {
+    display: block;
+    margin: 0 auto 0;
+    height: 500px;
+    width: auto;
+  }
   #projects-section {
     font-size: 22px;
   }
@@ -519,8 +535,14 @@ footer .footer-copyright {
   #projects-section #slideshow-container #dots-container .dot {
     display: inline-block;
   }
-  .text {
+  #projects-section .text {
     padding: 0 5em 0;
+  }
+  #projects-section video {
+    display: block;
+    margin: 0 auto 1em;
+    height: 500px;
+    width: auto;
   }
   #services-section {
     font-size: 22px;
@@ -662,6 +684,10 @@ footer .footer-copyright {
   #about-section {
     padding: 0 10em 0;
   }
+  #about-section video {
+    height: 500px;
+    width: 700px;
+  }
   #projects-section #slideshow-container {
     height: 750px;
   }
@@ -682,6 +708,10 @@ footer .footer-copyright {
   #projects-section .text {
     padding: 0 10em 0;
   }
+  #projects-section video {
+    height: 500px;
+    width: 700px;
+  }
   #services-section #services-grid {
     display: -ms-grid;
     display: grid;
@@ -690,7 +720,7 @@ footer .footer-copyright {
     grid-auto-columns: 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-    grid-gap: 2em 3em;
+    grid-gap: 1em 3em;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

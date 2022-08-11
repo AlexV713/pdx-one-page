@@ -55,6 +55,10 @@
                 <p>PDX Handyman Services LLC is a professional renovator who offers a wide range of high-quality
                     services like renovation, landscape, hardscape, painting, and installation. PDX Handyman Services
                     LLC has renovated many homes entirely for many clients and future homeowners.</p>
+                <video controls>
+                    <source src="images/videos/video-2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
                 <h2>About Me</h2>
                 <p>Hello, I am Jose Valerio (owner) and I’ve been working as a Handyman for over 30 years. I started
                     working
@@ -70,7 +74,13 @@
                 <h2>Ethical Practices & Hard Work</h2>
                 <p>PDX Handyman Services LLC values ethical practices to ensure people’s safety and daily living. I take
                     pride in my work and motivate myself to work hard to meet deadlines and give great services.</p>
+                    <p></p>
             </div>
+
+            <video controls>
+                <source src="images/videos/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
 
         </div>
 
@@ -124,6 +134,7 @@
                     <p>Jose Valerio<br>(Owner)</p>
                     <a href="tel:5033510987" id="contact-phone-mobile">Call Now</a>
                     <p id="contact-phone-desktop">(503) 351-0987</p>
+                    <p><i><strong>Potental clients only.</strong> <br>Agencies and marketers will be ignored.</i></p>
                 </div>
             </div>
         </div>

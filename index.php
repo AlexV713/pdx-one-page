@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta property="og:title" content="PDX Handyman Services LLC"/>
-    <meta property="og:image" content="images/pdx-banner.png"/>
+    <meta property="og:image" content="https://pdxhandymanservicesllc.com/images/banner.jpg"/>
     <meta property="og:description" content="PDX Handyman Services LLC is a local handyman, renovator, landscaper, and painter in Oregon."/>
     <meta property="og:url" content="https://pdxhandymanservicesllc.com/"/>
     <meta property="og:image:width" content="1200" />

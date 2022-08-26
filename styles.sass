@@ -94,70 +94,72 @@ h2
         background-color: #1c1c1c
         width: auto
 
-#projects-section
-    font-size: 22px
-    #slideshow-container 
-        display: block
-        margin-left: auto
-        margin-right: auto
-        height: 320px
-        width: auto
+.slideshow-container 
+    display: block
+    margin-left: auto
+    margin-right: auto
+    height: 320px
+    width: auto
+    position: relative
+    background-color: #1c1c1c
+    .slides 
+        display: none
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
         position: relative
-        background-color: #1c1c1c
-        .slides 
+        .images 
+            display: block
+            margin-left: auto
+            margin-right: auto
+            object-fit: contain
+            height: 320px
+            width: auto
+    .prev,
+    .next 
+        background-color: transparent
+        color: white
+        border: none
+        border-radius: 50%
+        height: 50px
+        width: 50px
+        position: absolute
+        font-size: 1.5em
+        cursor: pointer
+        top: 45%
+    .prev:active,
+    .next:active 
+        opacity: 0.5
+    .prev 
+        left: 5%
+    .next 
+        right: 5%
+    #dots-container 
+        display: none
+        position: absolute
+        top: 90%
+        left: auto
+        font-size: 16px
+        text-align: center
+        width: 100%
+        word-spacing: 5px
+        .dot 
             display: none
-            flex-wrap: wrap
-            justify-content: center
-            align-items: center
-            position: relative
-            .images 
-                display: block
-                margin-left: auto
-                margin-right: auto
-                object-fit: contain
-                height: 320px
-                width: auto
-        .prev,
-        .next 
-            background-color: transparent
-            color: white
-            border: none
-            border-radius: 50%
-            height: 50px
-            width: 50px
-            position: absolute
-            font-size: 1.5em
+            background-color: #9b9b9b
+            width: 15px
+            height: 15px
             cursor: pointer
-            top: 45%
-        .prev:active,
-        .next:active 
+            transition: background-color 0.6s ease
+            border-radius: 50%
+        .dot:active 
             opacity: 0.5
-        .prev 
-            left: 5%
-        .next 
-            right: 5%
-        #dots-container 
-            display: none
-            position: absolute
-            top: 90%
-            left: auto
-            font-size: 16px
-            text-align: center
-            width: 100%
-            word-spacing: 5px
-            .dot 
-                display: none
-                background-color: #9b9b9b
-                width: 15px
-                height: 15px
-                cursor: pointer
-                transition: background-color 0.6s ease
-                border-radius: 50%
-            .dot:active 
-                opacity: 0.5
-            .active, 
-            .dot:hover 
-                background-color: white
+        .active, 
+        .dot:hover 
+            background-color: white
+
+#projects-section-text
+    font-size: 22px
+
     video 
         display: block
         margin: 0 auto 1em
@@ -335,21 +337,26 @@ footer
             height: 500px
             width: auto
 
-    #projects-section
+    .slideshow-container
+        height: 600px
+        .slides
+            .images
+                height: 600px
+                width: auto
+                object-fit: cover
+        .prev,
+        .next 
+            bottom: 10%
+            font-size: 50px
+        #dots-container
+            display: block
+            font-size: 16px
+            top: 95%
+            .dot
+                display: inline-block
+
+    #projects-section-text
         font-size: 22px
-        #slideshow-container
-            height: 600px
-            .slides
-                .images
-                    height: 600px
-                    width: auto
-                    object-fit: cover
-            #dots-container
-                display: block
-                font-size: 16px
-                top: 95%
-                .dot
-                    display: inline-block
         .text 
             padding: 0 5em 0
         video 
@@ -399,9 +406,23 @@ footer
 
 /* Desktops */
 @media only screen and (min-width: 1025px)
-
     #mobile-nav 
         display: none
+
+    .grids 
+        margin: 1em auto 0
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: auto
+        grid-auto-columns: 1fr
+        justify-content: center
+        justify-items: center
+        align-items: center
+        align-content: center
+        grid-gap: 1em 0.5em
+        .single-grid-item 
+            grid-column: 1 / 3
+            padding: 0 10em 0 !important
 
     #desktop-header 
         display: flex
@@ -451,30 +472,32 @@ footer
                     text-decoration: none
 
     #about-section 
-        padding: 0 10em 0
+        padding: 0 2em 0
         video 
-            height: 500px
-            width: 700px
-
-    #projects-section
-        #slideshow-container
-            height: 750px
-            .slides
-                .images
-                    height: 750px
-                    width: auto
-                    object-fit: cover
-            #dots-container
-                display: block
-                font-size: 16px
-                top: 95%
-                .dot 
-                    display: inline-block
+            height: 400px
+            width: 600px
         .text 
-            padding: 0 10em 0
+            padding: 0 2em
+
+    .slideshow-container
+        height: 750px
+        .slides
+            .images
+                height: 750px
+                width: auto
+                object-fit: cover
+        #dots-container
+            display: block
+            font-size: 16px
+            top: 95%
+            .dot 
+                display: inline-block
+
+    #projects-section-text
+        padding: 0 2em 0
         video 
-            height: 500px
-            width: 700px
+            height: 400px
+            width: 600px
 
     #services-section
         #services-grid
@@ -529,18 +552,31 @@ footer
 
 /* Desktops 1440p */
 @media only screen and (min-width: 1400px)
+    .grids 
+        margin: 1em auto 0
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: auto
+        grid-auto-columns: 1fr
+        justify-content: center
+        justify-items: center
+        align-items: center
+        align-content: center
+        grid-gap: 1em 0.5em
+    .single-grid-item 
+        grid-column: 1 / 3
+        padding: 0 10em 0 !important
+
     #hero-banner
         #hero-text
             padding: 0 25em 0
 
     #about-section 
-        .text
-            padding: 0 15em 0
+        padding: 0 10em 0
 
-    #projects-section
-        .text
-            padding: 0 15em 0
+    #projects-section-text
+        padding: 0 10em 0
 
     #services-section
         .text 
-            padding: 0 15em 0
+            padding: 0 17em 0

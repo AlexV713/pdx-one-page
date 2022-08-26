@@ -1,4 +1,4 @@
-<div id="slideshow-container">
+<div class="slideshow-container" id="projects-section">
 
     <div class="slides slide-effect">
         <img loading="lazy" class="images" src="images/projects/03.jpg" alt="brick flooring">

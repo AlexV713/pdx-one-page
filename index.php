@@ -5,16 +5,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="PDX Handyman Services LLC is a local handyman, renovator, landscaper, and painter in Oregon.">
+    <meta name="description"
+        content="PDX Handyman Services LLC is a local handyman, renovator, landscaper, and painter in Oregon.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:title" content="PDX Handyman Services LLC"/>
-    <meta property="og:image" content="https://pdxhandymanservicesllc.com/images/banner.jpg"/>
-    <meta property="og:description" content="PDX Handyman Services LLC is a local handyman, renovator, landscaper, and painter in Oregon."/>
-    <meta property="og:url" content="https://pdxhandymanservicesllc.com/"/>
+    <meta property="og:title" content="PDX Handyman Services LLC" />
+    <meta property="og:image" content="https://pdxhandymanservicesllc.com/images/banner.jpg" />
+    <meta property="og:description"
+        content="PDX Handyman Services LLC is a local handyman, renovator, landscaper, and painter in Oregon." />
+    <meta property="og:url" content="https://pdxhandymanservicesllc.com/" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="628" />
-    <meta property="og:type" content="website"/>
+    <meta property="og:type" content="website" />
 
     <link href="styles.css" rel="stylesheet" type="text/css">
     <link rel="canonical" href="https://pdxhandymanservicesllc.com/">
@@ -23,7 +25,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
     <link rel="manifest" href="images/favicons/site.webmanifest">
-    
+
     <script src="https://kit.fontawesome.com/cf72e27b3d.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>PDX Handyman Services LLC</title>
@@ -49,16 +51,18 @@
             </div>
         </div>
 
-        <div id="about-section">
+        <div id="about-section" class="grids">
             <div class="text">
                 <h2>The Ultimate Handyman Experience</h2>
                 <p>PDX Handyman Services LLC is a professional renovator who offers a wide range of high-quality
                     services like renovation, landscape, hardscape, painting, and installation. PDX Handyman Services
                     LLC has renovated many homes entirely for many clients and future homeowners.</p>
-                <video controls>
-                    <source src="images/videos/video-2.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+            </div>
+            <video controls>
+                <source src="images/videos/video-2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="text single-grid-item ">
                 <h2>About Me</h2>
                 <p>Hello, I am Jose Valerio (owner) and I’ve been working as a Handyman for over 30 years. I started
                     working
@@ -66,15 +70,14 @@
             </div>
         </div>
 
-        <div id="projects-section">
+        <?php require_once('includes/slideshow.html.php'); ?>
 
-            <?php require_once('includes/slideshow.html.php'); ?>
+        <div id="projects-section-text" class="grids">
 
             <div class="text">
                 <h2>Ethical Practices & Hard Work</h2>
                 <p>PDX Handyman Services LLC values ethical practices to ensure people’s safety and daily living. I take
                     pride in my work and motivate myself to work hard to meet deadlines and give great services.</p>
-                    <p></p>
             </div>
 
             <video controls>

@@ -49,6 +49,43 @@
     </header>
     <main>
 
+        <section id="services">
+            <h2>Services</h2>
+            <div id="services-wrapper">
+                <div class="service">
+                    <img src="images/handyman.jpg" alt="">
+                    <h3>Handyman</h3>
+                    <p>Short description of the service.</p>
+                </div>
+                <div class="service">
+                    <img src="images/handyman.jpg" alt="">
+                    <h3>Renovation</h3>
+                    <p>Short description of the service.</p>
+                </div>
+                <div class="service">
+                    <img src="images/handyman.jpg" alt="">
+                    <h3>Landscape</h3>
+                    <p>Short description of the service.</p>
+                </div>
+                <div class="service">
+                    <img src="images/handyman.jpg" alt="">
+                    <h3>Hardscape</h3>
+                    <p>Short description of the service.</p>
+                </div>
+                <div class="service">
+                    <img src="images/handyman.jpg" alt="">
+                    <h3>Paint</h3>
+                    <p>Short description of the service.</p>
+                </div>
+                <div class="service">
+                    <img src="images/handyman.jpg" alt="">
+                    <h3>Installation</h3>
+                    <p>Short description of the service.</p>
+                </div>
+            </div>
+            <button><a href="#contact">Contact</a></button>
+        </section>
+
     </main>
 </body>
 

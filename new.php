@@ -117,7 +117,23 @@
             <?php require_once("includes/slideshow.html.php"); ?>
         </section>
 
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <h3>Need a Handyman or Need our Home Renovated?</h3>
+            <p>Jose Valerio</p>
+            <p><i>(Owner)</i></p>
+            <p>(503) 351-0987</p>
+            <p><i>Potential clients only. Agencies and marketers will be ignored.</i></p>
+
+            <h3>Locations</h3>
+            <p>I am available in your area!</p>
+            <p>All Forest Grove, Cornelius, Hillsboro, Beaverton, Aloha, Tigard, Newberg, Tillamook, Oregon City, Portland, McMinnville, Lake Oswego, and Vancouver Washington!</p>
+        </section>
+
     </main>
+
+    <?php require_once("includes/footer.html.php"); ?>
 
     <button id="backUp">Top</button>
 

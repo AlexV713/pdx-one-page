@@ -85,6 +85,37 @@ html
     font-size: 1.5em
     color: #ffffff
 
+footer
+    padding: 1em 1em 1em
+    color: white
+    background-color: #1c1c1c
+    text-align: center
+    font-size: 22px
+    #footer-grid 
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        ul 
+            list-style-type: none
+            padding: 0
+            margin: 0
+            line-height: 2
+        p,
+        a
+            font-size: 25px
+            color: white
+        a 
+            text-decoration: none
+        #mobile-phone
+            text-decoration: underline
+        #desktop-phone 
+            display: none
+    .footer-copyright 
+        padding-top: 2em
+        font-size: 15px
+        font-style: italic
+
 /* Desktops */
 @media only screen and (min-width: 1025px)
 
@@ -121,7 +152,7 @@ html
             display: block
             margin-left: auto
             margin-right: auto
-            margin-bottom: 17em
+            margin-bottom: 16em
             color: white
             text-align: center
             h1 
@@ -131,6 +162,7 @@ html
                 margin-top: -0.5em
 
     #services 
+        font-size: 1.2rem
         text-align: center
         #services-wrapper
             display: grid
@@ -145,7 +177,6 @@ html
             padding: 0 15em 0
             .service 
                 text-align: center
-                font-size: 1.2rem
                 img 
                     border-radius: 50% 
                     width: 200px
@@ -160,6 +191,7 @@ html
                 font-size: 1.5rem
 
     #about 
+        font-size: 1.2rem
         h2 
             text-align: center
         #about-wrapper 
@@ -207,4 +239,33 @@ html
                 top: 95%
                 .dot 
                     display: inline-block
+
+    #contact 
+        font-size: 1.2rem
+        h1,
+        h2,
+        h3,
+        p
+            text-align: center
+
+    footer
+        #footer-grid
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr
+            grid-auto-columns: 1fr
+            grid-template-rows: auto
+            grid-gap: 1em 0.5em
+            justify-content: stretch
+            justify-items: center
+            align-items: baseline
+            align-content: center
+            p 
+                padding: 0 3em 0
+            #mobile-phone
+                display: none
+            #desktop-phone 
+                display: block
+
+    #backUp 
+        bottom: 2em
 

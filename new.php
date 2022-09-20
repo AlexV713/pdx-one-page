@@ -86,7 +86,43 @@
             <button><a href="#contact">Contact</a></button>
         </section>
 
+        <section id="about">
+            <h2>About PDX Handyman Services LLC</h2>
+            <div id="about-wrapper">
+                <div id="pro">
+                    <h3>The Ultimate Handyman Experience</h3>
+                    <p>PDX Handyman Services LLC is a professional renovator who offers a wide range of high-quality
+                        services like renovation, landscape, hardscape, painting, and installation. <br><br>PDX Handyman
+                        Services LLC has renovated many homes entirely for many clients and future homeowners.</p>
+                </div>
+                <video controls>
+                    <source src="images/videos/video-2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="about-him">
+                <h3>My Story</h3>
+                <p>Hello, I am Jose Valerio (owner) and I’ve been working as a Handyman for over 30 years. I started
+                    working as a handyman back in my home country, Mexico, and started my business after moving to the
+                    U.S.</p>
+                <video controls>
+                    <source src="images/videos/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <?php require_once("includes/slideshow.html.php"); ?>
+        </section>
+
     </main>
+
+    <button id="backUp">Top</button>
+
+    <script src="scripts.js" type="text/javascript"></script>
+
 </body>
 
 </html>

@@ -4,6 +4,87 @@ html
     margin: 0
     scroll-behavior: smooth
 
+#projects
+    .slideshow-container 
+        display: block
+        margin-left: auto
+        margin-right: auto
+        height: 320px
+        width: auto
+        position: relative
+        background-color: #1c1c1c
+        .slides 
+            display: none
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+            position: relative
+            .images 
+                display: block
+                margin-left: auto
+                margin-right: auto
+                object-fit: contain
+                height: 320px
+                width: auto
+        .prev,
+        .next 
+            background-color: transparent
+            color: white
+            border: none
+            border-radius: 50%
+            height: 50px
+            width: 50px
+            position: absolute
+            font-size: 1.5em
+            cursor: pointer
+            top: 45%
+        .prev:active,
+        .next:active 
+            opacity: 0.5
+        .prev 
+            left: 5%
+        .next 
+            right: 5%
+        #dots-container 
+            display: none
+            position: absolute
+            top: 90%
+            left: auto
+            font-size: 16px
+            text-align: center
+            width: 100%
+            word-spacing: 5px
+            .dot 
+                display: none
+                background-color: #9b9b9b
+                width: 15px
+                height: 15px
+                cursor: pointer
+                transition: background-color 0.6s ease
+                border-radius: 50%
+            .dot:active 
+                opacity: 0.5
+            .active, 
+            .dot:hover 
+                background-color: white
+
+#backUp 
+    display: none 
+    position: fixed 
+    bottom: 4em
+    right: 2.5em
+    z-index: 99 
+    border: none
+    outline: none
+    background-color: #466ab6
+    color: black 
+    cursor: pointer 
+    border-radius: 50%
+    height: 75px
+    width: 75px
+    font-size: 1.5em
+    color: #ffffff
+
 /* Desktops */
 @media only screen and (min-width: 1025px)
 
@@ -77,3 +158,53 @@ html
                 text-decoration: none 
                 color: black
                 font-size: 1.5rem
+
+    #about 
+        h2 
+            text-align: center
+        #about-wrapper 
+            display: flex 
+            flex-direction: row 
+            justify-content: space-around
+            gap: 1em
+            align-items: start
+            padding: 0 10em 0 
+            #pro 
+                padding: 0 5em 0
+                font-size: 1.2rem
+            video 
+                background-color: black
+                width: 1900px
+                height: 350px
+        #about-him
+            margin-top: 2em
+            h3
+                text-align: center
+            p 
+                text-align: center 
+                font-size: 1.2rem 
+                padding: 0 20em 0
+            video 
+                display: block 
+                margin: 0 auto 0
+                background-color: black
+                width: 900px
+                height: 500px
+
+    #projects 
+        h2 
+            text-align: center
+        .slideshow-container
+            height: 750px
+            .slides
+                .images
+                    height: 750px
+                    width: auto
+                    object-fit: cover
+            #dots-container
+                display: block
+                font-size: 16px
+                top: 95%
+                .dot 
+                    display: inline-block
+

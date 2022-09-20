@@ -1,0 +1,79 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* Desktops */
+@media only screen and (min-width: 1025px) {
+  header {
+    background-image: url(images/projects/14.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    height: 700px;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  header #desktop-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header #desktop-navigation img {
+    height: 150px;
+    width: auto;
+  }
+  header #desktop-navigation nav {
+    word-spacing: 1em;
+    font-size: 1.3rem;
+  }
+  header #desktop-navigation nav a {
+    color: white;
+    text-decoration: none;
+  }
+  header #desktop-navigation nav #contact-button {
+    border: solid white 2px;
+    padding: 1em;
+  }
+  header #title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 17em;
+    color: white;
+    text-align: center;
+  }
+  header #title h1 {
+    font-size: 3rem;
+  }
+  header #title h2 {
+    font-size: 2.5rem;
+    margin-top: -0.5em;
+  }
+}
+/*# sourceMappingURL=style.css.map */

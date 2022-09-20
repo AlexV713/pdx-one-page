@@ -18,7 +18,7 @@
     <meta property="og:image:height" content="628" />
     <meta property="og:type" content="website" />
 
-    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="canonical" href="https://pdxhandymanservicesllc.com/">
 
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
@@ -32,8 +32,23 @@
 </head>
 
 <body>
+    <header>
+        <div id="desktop-navigation">
+            <img src="images/pdx-logo.png" alt="handyman">
+            <nav>
+                <a href="">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact" id="contact-button">Contact</a>
+            </nav>
+        </div>
+        <div id="title">
+            <h1>PDX Handyman Services LLC</h1>
+            <h2>Jobs Unlimited: Odd. Even. Any</h2>
+        </div>
+    </header>
     <main>
-        
+
     </main>
 </body>
 

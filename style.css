@@ -528,7 +528,7 @@ footer .footer-copyright {
   #about #about-him p {
     text-align: center;
     font-size: 1.2rem;
-    padding: 0 15em 0;
+    padding: 0 10em 0;
   }
   #about #about-him video {
     display: block;
@@ -634,7 +634,7 @@ footer .footer-copyright {
     display: -ms-grid;
     display: grid;
     grid-gap: 1em 0.5em;
-    padding: 0 15em 0;
+    padding: 0 10em 0;
   }
   #about #about-wrapper {
     display: -ms-grid;
@@ -672,7 +672,7 @@ footer .footer-copyright {
   }
   #about #about-him p {
     text-align: left;
-    padding: 0 25em 0;
+    padding: 0 15em 0;
     font-size: 1.5rem;
   }
   #about #about-him video {
@@ -682,12 +682,18 @@ footer .footer-copyright {
     width: 900px;
     height: 500px;
   }
-  #projects h2 {
-    font-size: 1.7rem;
+  #projects .slideshow-container {
+    height: 900px;
+  }
+  #projects .slideshow-container .slides .images {
+    height: 900px;
+    width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   #contact {
     font-size: 1.5rem;
-    padding: 0.5em 25em;
+    padding: 0.5em 15em;
   }
   #contact h1,
   #contact h2,

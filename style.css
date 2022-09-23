@@ -106,6 +106,7 @@ header #title h2 {
 #services {
   padding: 1em;
   color: white;
+  font-size: 1.3rem;
 }
 
 #services h2 {
@@ -136,7 +137,10 @@ header #title h2 {
 #services #services-wrapper .service h3,
 #services #services-wrapper .service p {
   text-align: center;
-  font-size: 1.5rem;
+}
+
+#services #services-wrapper .service p {
+  display: none;
 }
 
 #services button {
@@ -157,6 +161,7 @@ header #title h2 {
 #about {
   padding: 1em;
   background-color: #FFFFFF;
+  font-size: 1.3rem;
 }
 
 #about h2 {
@@ -181,7 +186,6 @@ header #title h2 {
 }
 
 #about #about-wrapper #pro {
-  font-size: 1.5rem;
   padding: 0 1em 0;
 }
 
@@ -194,7 +198,6 @@ header #title h2 {
 }
 
 #about #about-him {
-  font-size: 1.5rem;
   margin: 0 auto 0;
 }
 
@@ -306,10 +309,10 @@ header #title h2 {
 }
 
 #contact {
-  padding: 0.5em 0;
+  padding: 0.5em 1em;
   background-color: #FFFFFF;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 #backUp {
@@ -335,7 +338,7 @@ footer {
   color: white;
   background-color: #1c1c1c;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.3rem;
 }
 
 footer #footer-grid {
@@ -383,6 +386,203 @@ footer .footer-copyright {
   padding-top: 2em;
   font-size: 15px;
   font-style: italic;
+}
+
+/* Tablets */
+@media only screen and (min-width: 480px) {
+  header {
+    background-image: url(images/projects/14.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    height: 700px;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  header #desktop-navigation {
+    display: none;
+  }
+  header #mobile-nav {
+    padding: 1em 0;
+  }
+  header #mobile-nav #front {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header #mobile-nav #front #logo,
+  header #mobile-nav #front img {
+    margin-right: auto;
+    padding-left: 1em;
+    height: 150px;
+  }
+  header #mobile-nav #front .fa-bars {
+    font-size: 3em;
+  }
+  header #mobile-nav #mobile-links li a {
+    font-size: 30px;
+  }
+  header #title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25vh;
+    color: white;
+    text-align: center;
+  }
+  header #title h1 {
+    font-size: 2.5rem;
+  }
+  header #title h2 {
+    font-size: 2rem;
+    margin-top: -0.5em;
+  }
+  #services #services-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-auto-columns: 1fr;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    justify-items: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    grid-gap: 1em 0.5em;
+    padding: 0 5em 0;
+  }
+  #services #services-wrapper .service {
+    text-align: center;
+  }
+  #services #services-wrapper .service img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  #about h2 {
+    text-align: center;
+  }
+  #about #about-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 auto 0;
+  }
+  #about #about-wrapper h3 {
+    text-align: center;
+  }
+  #about #about-wrapper #pro {
+    font-size: 1.5rem;
+    padding: 0 2em 0;
+  }
+  #about #about-wrapper video {
+    display: block;
+    background-color: black;
+    margin: 0 auto 0;
+    width: 100%;
+    height: 500px;
+  }
+  #about #about-him {
+    font-size: 1.5rem;
+    margin: 0 auto 0;
+  }
+  #about #about-him h3 {
+    text-align: center;
+  }
+  #about #about-him p {
+    padding: 0 2em 0;
+  }
+  #about #about-him video {
+    display: block;
+    background-color: black;
+    margin: 0 auto 0;
+    width: 100%;
+    height: 500px;
+  }
+  #projects .slideshow-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    width: auto;
+    position: relative;
+    background-color: #1c1c1c;
+  }
+  #projects .slideshow-container .slides {
+    display: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  #projects .slideshow-container .slides .images {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: 600px;
+    width: auto;
+  }
+  #projects .slideshow-container .prev,
+  #projects .slideshow-container .next {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    font-size: 3em;
+    cursor: pointer;
+    top: 45%;
+  }
+  #projects .slideshow-container .prev:active,
+  #projects .slideshow-container .next:active {
+    opacity: 0.5;
+  }
+  #projects .slideshow-container .prev {
+    left: 5%;
+  }
+  #projects .slideshow-container .next {
+    right: 5%;
+  }
 }
 
 /* Desktops */

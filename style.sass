@@ -67,6 +67,7 @@ header
 #services 
     padding: 1em
     color: white
+    font-size: 1.3rem
     h2 
         text-align: center
     #services-wrapper
@@ -82,7 +83,8 @@ header
             h3,
             p 
                 text-align: center
-                font-size: 1.5rem
+            p 
+                display: none
     button 
         display: block 
         margin: 0 auto 0
@@ -98,6 +100,7 @@ header
 #about 
     padding: 1em
     background-color: #FFFFFF
+    font-size: 1.3rem
     h2 
         text-align: center
     #about-wrapper
@@ -108,7 +111,6 @@ header
         h3 
             text-align: center
         #pro
-            font-size: 1.5rem
             padding: 0 1em 0
         video 
             display: block 
@@ -117,7 +119,6 @@ header
             width: 100%
             height: 400px
     #about-him
-        font-size: 1.5rem 
         margin: 0 auto 0
         h3 
             text-align: center
@@ -196,10 +197,10 @@ header
                 background-color: white
             
 #contact
-    padding: 0.5em 0
+    padding: 0.5em 1em
     background-color: #FFFFFF
     text-align: center
-    font-size: 1.5rem
+    font-size: 1.3rem
 
 #backUp 
     display: none 
@@ -223,7 +224,7 @@ footer
     color: white
     background-color: #1c1c1c
     text-align: center
-    font-size: 22px
+    font-size: 1.3rem
     #footer-grid 
         display: flex
         flex-direction: column
@@ -248,6 +249,146 @@ footer
         padding-top: 2em
         font-size: 15px
         font-style: italic
+
+/* Tablets */
+@media only screen and (min-width: 480px) 
+    header 
+        background-image: url(images/projects/14.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+        height: 700px
+        width: auto 
+        display: flex 
+        flex-direction: column 
+        justify-content: space-between
+        align-items: stretch
+        #desktop-navigation
+            display: none
+        #mobile-nav
+            padding: 1em 0
+            #front
+                display: flex
+                justify-content: flex-end
+                align-items: center
+                #logo,
+                img
+                    margin-right: auto 
+                    padding-left: 1em
+                    height: 150px
+                .fa-bars 
+                    font-size: 3em
+            #mobile-links
+                li
+                    a 
+                        font-size: 30px
+        #title 
+            display: block
+            margin-left: auto
+            margin-right: auto
+            margin-bottom: 25vh
+            color: white
+            text-align: center
+            h1 
+                font-size: 2.5rem
+            h2 
+                font-size: 2rem
+                margin-top: -0.5em
+
+    #services 
+        #services-wrapper
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: auto 
+            grid-auto-columns: 1fr 
+            justify-content: space-around
+            justify-items: center
+            align-items: baseline
+            align-content: center
+            grid-gap: 1em 0.5em
+            padding: 0 5em 0
+            .service 
+                text-align: center
+                img 
+                    border-radius: 50% 
+                    width: 200px
+                    height: 200px
+
+    #about 
+        h2 
+            text-align: center
+        #about-wrapper
+            display: flex 
+            flex-direction: column
+            justify-content: space-around
+            margin: 0 auto 0
+            h3 
+                text-align: center
+            #pro
+                font-size: 1.5rem
+                padding: 0 2em 0
+            video 
+                display: block 
+                background-color: black
+                margin: 0 auto 0
+                width: 100%
+                height: 500px
+        #about-him
+            font-size: 1.5rem 
+            margin: 0 auto 0
+            h3 
+                text-align: center
+            p
+                padding: 0 2em 0
+            video 
+                display: block 
+                background-color: black
+                margin: 0 auto 0
+                width: 100%
+                height: 500px
+
+    #projects
+        .slideshow-container 
+            display: block
+            margin-left: auto
+            margin-right: auto
+            height: 600px
+            width: auto
+            position: relative
+            background-color: #1c1c1c
+            .slides 
+                display: none
+                flex-wrap: wrap
+                justify-content: center
+                align-items: center
+                position: relative
+                .images 
+                    display: block
+                    margin-left: auto
+                    margin-right: auto
+                    object-fit: contain
+                    height: 600px
+                    width: auto
+            .prev,
+            .next 
+                background-color: transparent
+                color: white
+                border: none
+                border-radius: 50%
+                height: 50px
+                width: 50px
+                position: absolute
+                font-size: 3em
+                cursor: pointer
+                top: 45%
+            .prev:active,
+            .next:active 
+                opacity: 0.5
+            .prev 
+                left: 5%
+            .next 
+                right: 5%
 
 /* Desktops */
 @media only screen and (min-width: 1025px)

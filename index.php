@@ -40,7 +40,7 @@
         <div id="desktop-navigation">
             <img src="images/pdx-logo.png" alt="handyman">
             <nav>
-                <a href="">Home</a>
+                <a href="https://pdxhandymanservicesllc.com/">Home</a>
                 <a href="#services">Services</a>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
@@ -59,10 +59,10 @@
             </div>
             <ul id="mobile-links">
                 <li><a href="https://pdxhandymanservicesllc.com/">Home</a></li>
-                <li><a href="#about-section">About</a></li>
-                <li><a href="#projects-section">Projects</a></li>
-                <li><a href="#services-section">Services</a></li>
-                <li><a href="#contact-section">Contact</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
@@ -149,7 +149,7 @@
         <section id="contact">
             <h2>Contact</h2>
 
-            <h3>Need a Handyman or Need our Home Renovated?</h3>
+            <h3>Need a Handyman or Need Your Home Renovated?</h3>
             <p>Jose Valerio</p>
             <p><i>(Owner)</i></p>
             <p>(503) 351-0987</p>

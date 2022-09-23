@@ -21,6 +21,10 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="canonical" href="https://pdxhandymanservicesllc.com/">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
@@ -39,14 +43,36 @@
                 <a href="">Home</a>
                 <a href="#services">Services</a>
                 <a href="#about">About</a>
+                <a href="#projects">Projects</a>
                 <a href="#contact" id="contact-button">Contact</a>
             </nav>
         </div>
+
+        <nav id="mobile-nav">
+            <div id="front">
+                <a href="https://pdxhandymanservicesllc.com/" id="logo">
+                    <img src="images/pdx-logo.png" alt="handyman">
+                </a>
+                <a href="#" id="toggle">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+            <ul id="mobile-links">
+                <li><a href="https://pdxhandymanservicesllc.com/">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#services-section">Services</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
+
         <div id="title">
             <h1>PDX Handyman Services LLC</h1>
             <h2>Jobs Unlimited: Odd. Even. Any</h2>
         </div>
+
     </header>
+
     <main>
 
         <section id="services">
@@ -58,27 +84,27 @@
                     <p>Short description of the service.</p>
                 </div>
                 <div class="service">
-                    <img src="images/handyman.jpg" alt="">
+                    <img src="images/remodeling.jpg" alt="">
                     <h3>Renovation</h3>
                     <p>Short description of the service.</p>
                 </div>
                 <div class="service">
-                    <img src="images/handyman.jpg" alt="">
+                    <img src="images/landscape.jpg" alt="">
                     <h3>Landscape</h3>
                     <p>Short description of the service.</p>
                 </div>
                 <div class="service">
-                    <img src="images/handyman.jpg" alt="">
+                    <img src="images/hardscape.jpg" alt="">
                     <h3>Hardscape</h3>
                     <p>Short description of the service.</p>
                 </div>
                 <div class="service">
-                    <img src="images/handyman.jpg" alt="">
+                    <img src="images/painting.jpg" alt="">
                     <h3>Paint</h3>
                     <p>Short description of the service.</p>
                 </div>
                 <div class="service">
-                    <img src="images/handyman.jpg" alt="">
+                    <img src="images/installation.jpg" alt="">
                     <h3>Installation</h3>
                     <p>Short description of the service.</p>
                 </div>
@@ -94,6 +120,10 @@
                     <p>PDX Handyman Services LLC is a professional renovator who offers a wide range of high-quality
                         services like renovation, landscape, hardscape, painting, and installation. <br><br>PDX Handyman
                         Services LLC has renovated many homes entirely for many clients and future homeowners.</p>
+                    <h3>Ethical Practices & Hard Work</h3>
+                    <p>PDX Handyman Services LLC values ethical practices to ensure people’s safety and daily living. I
+                        take pride in my work and motivate myself to work hard to meet deadlines and give great
+                        services.</p>
                 </div>
                 <video controls>
                     <source src="images/videos/video-2.mp4" type="video/mp4">
@@ -113,7 +143,6 @@
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
             <?php require_once("includes/slideshow.html.php"); ?>
         </section>
 
@@ -124,11 +153,12 @@
             <p>Jose Valerio</p>
             <p><i>(Owner)</i></p>
             <p>(503) 351-0987</p>
-            <p><i>Potential clients only. Agencies and marketers will be ignored.</i></p>
+            <p><i>*Potential clients only. Agencies and marketers will be ignored.</i></p>
 
             <h3>Locations</h3>
             <p>I am available in your area!</p>
-            <p>All Forest Grove, Cornelius, Hillsboro, Beaverton, Aloha, Tigard, Newberg, Tillamook, Oregon City, Portland, McMinnville, Lake Oswego, and Vancouver Washington!</p>
+            <p>All Forest Grove, Cornelius, Hillsboro, Beaverton, Aloha, Tigard, Newberg, Tillamook, Oregon City,
+                Portland, McMinnville, Lake Oswego, and Vancouver Washington!</p>
         </section>
 
     </main>

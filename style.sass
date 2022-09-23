@@ -3,6 +3,133 @@ html
     padding: 0
     margin: 0
     scroll-behavior: smooth
+    overflow-x: hidden
+    background-color: #1c1c1c
+    font-family: 'Heebo', sans-serif
+
+header 
+    background-image: url(images/projects/14.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    height: 700px
+    width: auto 
+    display: flex 
+    flex-direction: column 
+    justify-content: space-between
+    align-items: stretch
+    #desktop-navigation
+        display: none
+    #mobile-nav
+        padding: 1em 0
+        #front
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            #logo,
+            img
+                margin-right: auto 
+                padding-left: 1em
+                height: 120px
+            #toggle 
+                color: white
+            .fa-bars 
+                margin-left: auto 
+                padding-right: 1em 
+                font-size: 2.5em
+        #mobile-links
+            display: none
+            list-style-type: none
+            font-size: 1.3em
+            text-align: center
+            margin: 0
+            padding: 0 0 0.5em
+            li
+                a 
+                    color: white
+                    text-decoration: none 
+                    font-size: 25px
+                    line-height: 2
+    #title 
+        display: block
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 13em
+        color: white
+        text-align: center
+        h1 
+            font-size: 2.5rem
+        h2 
+            font-size: 2rem
+            margin-top: -0.5em
+
+#services 
+    padding: 1em
+    color: white
+    h2 
+        text-align: center
+    #services-wrapper
+        display: flex 
+        flex-direction: column
+        justify-content: space-around 
+        align-items: center 
+        .service 
+            img 
+                border-radius: 50%
+                width: 300px
+                height: 300px
+            h3,
+            p 
+                text-align: center
+                font-size: 1.5rem
+    button 
+        display: block 
+        margin: 0 auto 0
+        padding: 1.5em 2em
+        border-radius: 50px
+        background-color: #466ab6
+        border: solid #224b8f 3px
+        a 
+            color: white
+            text-decoration: none
+            font-size: 1.5rem
+
+#about 
+    padding: 1em
+    background-color: #FFFFFF
+    h2 
+        text-align: center
+    #about-wrapper
+        display: flex 
+        flex-direction: column
+        justify-content: space-around
+        margin: 0 auto 0
+        h3 
+            text-align: center
+        #pro
+            font-size: 1.5rem
+            padding: 0 1em 0
+        video 
+            display: block 
+            background-color: black
+            margin: 0 auto 0
+            width: 100%
+            height: 400px
+    #about-him
+        font-size: 1.5rem 
+        margin: 0 auto 0
+        h3 
+            text-align: center
+        p
+            padding: 0 1em 0
+        video 
+            display: block 
+            background-color: black
+            margin: 0 auto 0
+            width: 100%
+            height: 400px
+
 
 #projects
     .slideshow-container 
@@ -67,6 +194,12 @@ html
             .active, 
             .dot:hover 
                 background-color: white
+            
+#contact
+    padding: 0.5em 0
+    background-color: #FFFFFF
+    text-align: center
+    font-size: 1.5rem
 
 #backUp 
     display: none 
@@ -125,12 +258,14 @@ footer
         background-size: cover
         background-position: center
         box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
-        height: 700px
+        height: 100vh
         width: auto 
         display: flex 
         flex-direction: column 
         justify-content: space-between
         align-items: stretch
+        #mobile-nav 
+            display: none
         #desktop-navigation 
             display: flex 
             flex-direction: row 
@@ -147,12 +282,11 @@ footer
                     text-decoration: none
                 #contact-button 
                     border: solid white 2px
-                    padding: 1em
+                    border-radius: 25px
+                    padding: 0.5em
         #title 
             display: block
-            margin-left: auto
-            margin-right: auto
-            margin-bottom: 16em
+            margin: 0 auto 35vh
             color: white
             text-align: center
             h1 
@@ -162,7 +296,7 @@ footer
                 margin-top: -0.5em
 
     #services 
-        font-size: 1.2rem
+        font-size: 1.3rem
         text-align: center
         #services-wrapper
             display: grid
@@ -174,7 +308,7 @@ footer
             align-items: baseline
             align-content: center
             grid-gap: 1em 0.5em
-            padding: 0 15em 0
+            padding: 0 5em 0
             .service 
                 text-align: center
                 img 
@@ -182,12 +316,11 @@ footer
                     width: 200px
                     height: 200px
         button 
-            border-radius: 25px
             border: none
-            padding: 2em
+            padding: 1.5em 4em
             a 
                 text-decoration: none 
-                color: black
+                color: white
                 font-size: 1.5rem
 
     #about 
@@ -195,19 +328,15 @@ footer
         h2 
             text-align: center
         #about-wrapper 
-            display: flex 
-            flex-direction: row 
-            justify-content: space-around
-            gap: 1em
-            align-items: start
-            padding: 0 10em 0 
+            display: grid 
+            grid-template-columns: 650px 500px
+            grid-template-rows: auto
+            padding: 0 3em 0
             #pro 
-                padding: 0 5em 0
+                padding: 0 3em 0
                 font-size: 1.2rem
             video 
                 background-color: black
-                width: 1900px
-                height: 350px
         #about-him
             margin-top: 2em
             h3
@@ -215,24 +344,29 @@ footer
             p 
                 text-align: center 
                 font-size: 1.2rem 
-                padding: 0 20em 0
+                padding: 0 15em 0
             video 
                 display: block 
                 margin: 0 auto 0
                 background-color: black
-                width: 900px
-                height: 500px
+                width: 700px
+                height: 450px
 
     #projects 
         h2 
             text-align: center
+            color: white
+            font-size: 1.5rem
         .slideshow-container
-            height: 750px
+            height: 700px
             .slides
                 .images
-                    height: 750px
+                    height: 700px
                     width: auto
                     object-fit: cover
+            .prev,
+            .next 
+                font-size: 50px
             #dots-container
                 display: block
                 font-size: 16px
@@ -241,7 +375,8 @@ footer
                     display: inline-block
 
     #contact 
-        font-size: 1.2rem
+        font-size: 1.3rem
+        padding: 0.5em 10em
         h1,
         h2,
         h3,
@@ -249,6 +384,7 @@ footer
             text-align: center
 
     footer
+        font-size: 1.2rem
         #footer-grid
             display: grid
             grid-template-columns: 1fr 1fr 1fr
@@ -269,3 +405,75 @@ footer
     #backUp 
         bottom: 2em
 
+/* Desktops 1440p */
+@media only screen and (min-width: 1400px)
+    header 
+        #mobile-nav 
+            display: none
+        #desktop-navigation 
+            img 
+                height: 175px
+                width: auto
+            nav 
+                word-spacing: 1em
+                font-size: 1.5rem
+                a 
+                    color: white
+                    text-decoration: none
+        #title 
+            display: block
+            margin: 0 auto 40vh
+
+    #services 
+        #services-wrapper
+            display: grid
+            grid-gap: 1em 0.5em
+            padding: 0 15em 0
+
+    #about 
+        #about-wrapper 
+            display: grid 
+            grid-template-columns: 900px 600px
+            grid-auto-columns: auto
+            grid-gap: 1em
+            justify-content: center
+            margin: 0 auto 0
+            padding: 0 5em 0 
+            #pro 
+                padding: 0 5em 0
+                h3
+                    text-align: left
+                    font-size: 1.5rem
+                p 
+                    text-align: left 
+                    font-size: 1.5rem
+            video 
+                background-color: black
+        #about-him
+            margin-top: 2em
+            h3
+                text-align: center
+                font-size: 1.5rem
+            p 
+                text-align: left 
+                padding: 0 25em 0
+                font-size: 1.5rem
+            video 
+                display: block 
+                margin: 0 auto 0
+                background-color: black
+                width: 900px
+                height: 500px
+
+    #projects 
+        h2 
+            font-size: 1.7rem
+
+    #contact 
+        font-size: 1.5rem
+        padding: 0.5em 25em
+        h1,
+        h2,
+        h3,
+        p
+            text-align: center

@@ -3,6 +3,215 @@ html {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: #1c1c1c;
+  font-family: 'Heebo', sans-serif;
+}
+
+header {
+  background-image: url(images/projects/14.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  height: 700px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+header #desktop-navigation {
+  display: none;
+}
+
+header #mobile-nav {
+  padding: 1em 0;
+}
+
+header #mobile-nav #front {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #mobile-nav #front #logo,
+header #mobile-nav #front img {
+  margin-right: auto;
+  padding-left: 1em;
+  height: 120px;
+}
+
+header #mobile-nav #front #toggle {
+  color: white;
+}
+
+header #mobile-nav #front .fa-bars {
+  margin-left: auto;
+  padding-right: 1em;
+  font-size: 2.5em;
+}
+
+header #mobile-nav #mobile-links {
+  display: none;
+  list-style-type: none;
+  font-size: 1.3em;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 0.5em;
+}
+
+header #mobile-nav #mobile-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 2;
+}
+
+header #title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 13em;
+  color: white;
+  text-align: center;
+}
+
+header #title h1 {
+  font-size: 2.5rem;
+}
+
+header #title h2 {
+  font-size: 2rem;
+  margin-top: -0.5em;
+}
+
+#services {
+  padding: 1em;
+  color: white;
+}
+
+#services h2 {
+  text-align: center;
+}
+
+#services #services-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#services #services-wrapper .service img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+#services #services-wrapper .service h3,
+#services #services-wrapper .service p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#services button {
+  display: block;
+  margin: 0 auto 0;
+  padding: 1.5em 2em;
+  border-radius: 50px;
+  background-color: #466ab6;
+  border: solid #224b8f 3px;
+}
+
+#services button a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+#about {
+  padding: 1em;
+  background-color: #FFFFFF;
+}
+
+#about h2 {
+  text-align: center;
+}
+
+#about #about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto 0;
+}
+
+#about #about-wrapper h3 {
+  text-align: center;
+}
+
+#about #about-wrapper #pro {
+  font-size: 1.5rem;
+  padding: 0 1em 0;
+}
+
+#about #about-wrapper video {
+  display: block;
+  background-color: black;
+  margin: 0 auto 0;
+  width: 100%;
+  height: 400px;
+}
+
+#about #about-him {
+  font-size: 1.5rem;
+  margin: 0 auto 0;
+}
+
+#about #about-him h3 {
+  text-align: center;
+}
+
+#about #about-him p {
+  padding: 0 1em 0;
+}
+
+#about #about-him video {
+  display: block;
+  background-color: black;
+  margin: 0 auto 0;
+  width: 100%;
+  height: 400px;
 }
 
 #projects .slideshow-container {
@@ -96,6 +305,13 @@ html {
   background-color: white;
 }
 
+#contact {
+  padding: 0.5em 0;
+  background-color: #FFFFFF;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 #backUp {
   display: none;
   position: fixed;
@@ -178,7 +394,7 @@ footer .footer-copyright {
     background-position: center;
     -webkit-box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
             box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
-    height: 700px;
+    height: 100vh;
     width: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -193,6 +409,9 @@ footer .footer-copyright {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+  }
+  header #mobile-nav {
+    display: none;
   }
   header #desktop-navigation {
     display: -webkit-box;
@@ -222,13 +441,12 @@ footer .footer-copyright {
   }
   header #desktop-navigation nav #contact-button {
     border: solid white 2px;
-    padding: 1em;
+    border-radius: 25px;
+    padding: 0.5em;
   }
   header #title {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 16em;
+    margin: 0 auto 35vh;
     color: white;
     text-align: center;
   }
@@ -240,7 +458,7 @@ footer .footer-copyright {
     margin-top: -0.5em;
   }
   #services {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: center;
   }
   #services #services-wrapper {
@@ -260,7 +478,7 @@ footer .footer-copyright {
     -ms-flex-line-pack: center;
         align-content: center;
     grid-gap: 1em 0.5em;
-    padding: 0 15em 0;
+    padding: 0 5em 0;
   }
   #services #services-wrapper .service {
     text-align: center;
@@ -271,13 +489,12 @@ footer .footer-copyright {
     height: 200px;
   }
   #services button {
-    border-radius: 25px;
     border: none;
-    padding: 2em;
+    padding: 1.5em 4em;
   }
   #services button a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.5rem;
   }
   #about {
@@ -287,29 +504,20 @@ footer .footer-copyright {
     text-align: center;
   }
   #about #about-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    gap: 1em;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-    padding: 0 10em 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 650px 500px;
+        grid-template-columns: 650px 500px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    padding: 0 3em 0;
   }
   #about #about-wrapper #pro {
-    padding: 0 5em 0;
+    padding: 0 3em 0;
     font-size: 1.2rem;
   }
   #about #about-wrapper video {
     background-color: black;
-    width: 1900px;
-    height: 350px;
   }
   #about #about-him {
     margin-top: 2em;
@@ -320,26 +528,32 @@ footer .footer-copyright {
   #about #about-him p {
     text-align: center;
     font-size: 1.2rem;
-    padding: 0 20em 0;
+    padding: 0 15em 0;
   }
   #about #about-him video {
     display: block;
     margin: 0 auto 0;
     background-color: black;
-    width: 900px;
-    height: 500px;
+    width: 700px;
+    height: 450px;
   }
   #projects h2 {
     text-align: center;
+    color: white;
+    font-size: 1.5rem;
   }
   #projects .slideshow-container {
-    height: 750px;
+    height: 700px;
   }
   #projects .slideshow-container .slides .images {
-    height: 750px;
+    height: 700px;
     width: auto;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  #projects .slideshow-container .prev,
+  #projects .slideshow-container .next {
+    font-size: 50px;
   }
   #projects .slideshow-container #dots-container {
     display: block;
@@ -350,13 +564,17 @@ footer .footer-copyright {
     display: inline-block;
   }
   #contact {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    padding: 0.5em 10em;
   }
   #contact h1,
   #contact h2,
   #contact h3,
   #contact p {
     text-align: center;
+  }
+  footer {
+    font-size: 1.2rem;
   }
   footer #footer-grid {
     display: -ms-grid;
@@ -388,6 +606,94 @@ footer .footer-copyright {
   }
   #backUp {
     bottom: 2em;
+  }
+}
+
+/* Desktops 1440p */
+@media only screen and (min-width: 1400px) {
+  header #mobile-nav {
+    display: none;
+  }
+  header #desktop-navigation img {
+    height: 175px;
+    width: auto;
+  }
+  header #desktop-navigation nav {
+    word-spacing: 1em;
+    font-size: 1.5rem;
+  }
+  header #desktop-navigation nav a {
+    color: white;
+    text-decoration: none;
+  }
+  header #title {
+    display: block;
+    margin: 0 auto 40vh;
+  }
+  #services #services-wrapper {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1em 0.5em;
+    padding: 0 15em 0;
+  }
+  #about #about-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 900px 600px;
+        grid-template-columns: 900px 600px;
+    grid-auto-columns: auto;
+    grid-gap: 1em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto 0;
+    padding: 0 5em 0;
+  }
+  #about #about-wrapper #pro {
+    padding: 0 5em 0;
+  }
+  #about #about-wrapper #pro h3 {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  #about #about-wrapper #pro p {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  #about #about-wrapper video {
+    background-color: black;
+  }
+  #about #about-him {
+    margin-top: 2em;
+  }
+  #about #about-him h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  #about #about-him p {
+    text-align: left;
+    padding: 0 25em 0;
+    font-size: 1.5rem;
+  }
+  #about #about-him video {
+    display: block;
+    margin: 0 auto 0;
+    background-color: black;
+    width: 900px;
+    height: 500px;
+  }
+  #projects h2 {
+    font-size: 1.7rem;
+  }
+  #contact {
+    font-size: 1.5rem;
+    padding: 0.5em 25em;
+  }
+  #contact h1,
+  #contact h2,
+  #contact h3,
+  #contact p {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

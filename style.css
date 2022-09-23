@@ -92,6 +92,7 @@ header #title {
   margin-bottom: 13em;
   color: white;
   text-align: center;
+  padding: 0 1em;
 }
 
 header #title h1 {

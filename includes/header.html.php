@@ -1,34 +1,37 @@
 <header>
 
-<nav id="mobile-nav">
-    <div id="front">
-        <a href="https://pdxhandymanservicesllc.com/" id="logo">
-            <img src="images/pdx-logo.png" alt="handyman">
-        </a>
-        <a href="#" id="toggle">
-            <i class="fas fa-bars"></i>
-        </a>
-    </div>
-    <ul id="mobile-links">
-        <li><a href="https://pdxhandymanservicesllc.com/">Home</a></li>
-        <li><a href="#about-section">About</a></li>
-        <li><a href="#projects-section">Projects</a></li>
-        <li><a href="#services-section">Services</a></li>
-        <li><a href="#contact-section">Contact</a></li>
-    </ul>
-</nav>
-
-<div id="desktop-header">
-    <a href="https://pdxhandymanservicesllc.com/" id="title">
+    <div id="desktop-navigation">
         <img src="images/pdx-logo.png" alt="handyman">
-    </a>
-    <nav>
-        <a href="https://pdxhandymanservicesllc.com/" class="links">Home</a>
-        <a href="#about-section" class="links">About</a>
-        <a href="#projects-section" class="links">Projects</a>
-        <a href="#services-section" class="links">Services</a>
-        <a href="#contact-section" class="links">Contact</a>
+        <nav>
+            <a href="https://pdxhandymanservicesllc.com/">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact" id="contact-button">Contact</a>
+        </nav>
+    </div>
+
+    <nav id="mobile-nav">
+        <div id="front">
+            <a href="https://pdxhandymanservicesllc.com/" id="logo">
+                <img src="images/pdx-logo.png" alt="handyman">
+            </a>
+            <a href="#" id="toggle">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+        <ul id="mobile-links">
+            <li><a href="https://pdxhandymanservicesllc.com/">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-</div>
+
+    <div id="title">
+        <h1>PDX Handyman Services LLC</h1>
+        <h2>Jobs Unlimited: Odd. Even. Any</h2>
+    </div>
 
 </header>

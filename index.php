@@ -118,7 +118,8 @@
             <h3>Need a Handyman or Need Your Home Renovated?</h3>
             <p>Jose Valerio</p>
             <p><i>(Owner)</i></p>
-            <p>(503) 351-0987</p>
+            <h3>Contact Number</h3>
+            <?php require_once("includes/captcha.php"); ?>
             <p><i>*Potential clients only. Agencies and marketers will be ignored.</i></p>
 
             <h3>Locations</h3>

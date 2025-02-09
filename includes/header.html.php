@@ -7,7 +7,7 @@
             <a href="#services">Services</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
-            <a href="#contact" id="contact-button">Contact</a>
+            <a href="#contact" class="contact-button">Contact</a>
         </nav>
     </div>
 
